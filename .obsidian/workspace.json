@@ -1,0 +1,371 @@
+{
+  "main": {
+    "id": "9d13801079bd7cc6",
+    "type": "split",
+    "children": [
+      {
+        "id": "2038ee6a3975bfd7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a02d0fbb4a5c3dd5",
+            "type": "leaf",
+            "state": {
+              "type": "map",
+              "state": {
+                "name": "Default",
+                "mapZoom": 1,
+                "mapCenter": {
+                  "lat": 40.44694705960048,
+                  "lng": -180.70312500000003
+                },
+                "query": "",
+                "chosenMapSource": 0,
+                "defaultState": {
+                  "name": "Default",
+                  "mapZoom": 1,
+                  "mapCenter": {
+                    "lat": 40.44694705960048,
+                    "lng": -180.70312500000003
+                  },
+                  "query": "",
+                  "chosenMapSource": 0
+                },
+                "savedStates": [],
+                "markerIconRules": [
+                  {
+                    "ruleName": "default",
+                    "preset": true,
+                    "iconDetails": {
+                      "prefix": "fas",
+                      "icon": "fa-circle",
+                      "markerColor": "blue"
+                    }
+                  },
+                  {
+                    "ruleName": "#trip",
+                    "preset": false,
+                    "iconDetails": {
+                      "prefix": "fas",
+                      "icon": "fa-hiking",
+                      "markerColor": "green"
+                    }
+                  },
+                  {
+                    "ruleName": "#trip-water",
+                    "preset": false,
+                    "iconDetails": {
+                      "prefix": "fas",
+                      "markerColor": "blue"
+                    }
+                  },
+                  {
+                    "ruleName": "#dogs",
+                    "preset": false,
+                    "iconDetails": {
+                      "prefix": "fas",
+                      "icon": "fa-paw"
+                    }
+                  }
+                ],
+                "zoomOnGoFromNote": 15,
+                "autoZoom": true,
+                "markerClickBehavior": "replaceCurrent",
+                "markerCtrlClickBehavior": "dedicatedPane",
+                "markerMiddleClickBehavior": "dedicatedTab",
+                "openMapBehavior": "replaceCurrent",
+                "openMapCtrlClickBehavior": "dedicatedPane",
+                "openMapMiddleClickBehavior": "dedicatedTab",
+                "newNoteNameFormat": "Location added on {{date:YYYY-MM-DD}}T{{date:HH-mm}}",
+                "showNoteNamePopup": true,
+                "showLinkNameInPopup": "mobileOnly",
+                "showNotePreview": true,
+                "showClusterPreview": false,
+                "debug": false,
+                "openIn": [
+                  {
+                    "name": "Google Maps",
+                    "urlPattern": "https://maps.google.com/?q={x},{y}"
+                  }
+                ],
+                "urlParsingRules": [
+                  {
+                    "name": "OpenStreetMap Show Address",
+                    "regExp": "https:\\/\\/www.openstreetmap.org\\S*query=([0-9\\.\\-]+%2C[0-9\\.\\-]+)\\S*",
+                    "ruleType": "latLng",
+                    "preset": true
+                  },
+                  {
+                    "name": "Generic Lat,Lng",
+                    "regExp": "([0-9\\.\\-]+), ([0-9\\.\\-]+)",
+                    "ruleType": "latLng",
+                    "preset": true
+                  }
+                ],
+                "mapControls": {
+                  "filtersDisplayed": true,
+                  "viewDisplayed": true,
+                  "presetsDisplayed": false
+                },
+                "maxClusterRadiusPixels": 20,
+                "searchProvider": "osm",
+                "useGooglePlaces": false,
+                "mapSources": [
+                  {
+                    "name": "CartoDB",
+                    "urlLight": "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png",
+                    "preset": true
+                  }
+                ],
+                "chosenMapMode": "auto",
+                "saveHistory": true,
+                "letZoomBeyondMax": false,
+                "queryForFollowActiveNote": "path:\"$PATH$\"",
+                "supportRealTimeGeolocation": false,
+                "fixFrontMatterOnPaste": true,
+                "geoHelperType": "auto",
+                "geoHelperFilePath": "",
+                "handleGeolinksInNotes": true,
+                "showGeolinkPreview": false,
+                "zoomOnGeolinkPreview": 10,
+                "queryError": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a2b767427a2c692d",
+    "type": "split",
+    "children": [
+      {
+        "id": "24f52592c044be99",
+        "type": "tabs",
+        "dimension": 72.62737262737262,
+        "children": [
+          {
+            "id": "3c0c9077686c6762",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "41eb3986023c371a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#tag7",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "76e995b786b184ec",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "1abe5a814a04ab75",
+            "type": "leaf",
+            "state": {
+              "type": "surfing-tab-tree",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "1cf98a380863f95b",
+        "type": "tabs",
+        "dimension": 27.37262737262737,
+        "children": [
+          {
+            "id": "671b16bdb0d85db5",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 263.5
+  },
+  "right": {
+    "id": "8b37a8bc0f931ae6",
+    "type": "split",
+    "children": [
+      {
+        "id": "955dc234cc52ade7",
+        "type": "tabs",
+        "dimension": 26.747437092264683,
+        "children": [
+          {
+            "id": "046ab7b6557d0f6c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ea2288adcaa44e05",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ea70f2aec9fe77a6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              }
+            }
+          },
+          {
+            "id": "07917b3830c82627",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      },
+      {
+        "id": "59f41a56c47cc7a4",
+        "type": "tabs",
+        "dimension": 27.86579683131407,
+        "children": [
+          {
+            "id": "d3805b750b496938",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "5d4a74d67cbc985e",
+        "type": "tabs",
+        "dimension": 45.386766076421246,
+        "children": [
+          {
+            "id": "db8a57dad6ab723c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "zzz-template/常用工具.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 313.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "templater-obsidian:Templater": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "workspaces:管理工作区布局": false,
+      "switcher:打开快速切换": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-leaflet-plugin:打开 Leaflet 地图": false,
+      "obsidian-map-view:Open map view": false
+    }
+  },
+  "active": "a02d0fbb4a5c3dd5",
+  "lastOpenFiles": [
+    "北京行程计划.md",
+    "zzz-template/常用工具.md",
+    "001-library/10后孩子的养育法则.md",
+    "001-library/001-library.md",
+    "书签.md",
+    "表格美化.pdf",
+    "000-tips/自定义样式/03_Admonition和Callout.md",
+    "zzz-attachment/Pasted image 20230614105412.png",
+    "README.md",
+    "000-tips/自定义样式/01-自定义标签.md",
+    "000-tips/cssclass示例/表格美化.md",
+    "000-tips/自定义工具.md",
+    "zzz-template/button.md",
+    "001-library/Go语言精进之路：从新手到高手的编程思想、方法和技巧1.md",
+    "zzz-attachment/banners/wallhaven-qzzrj5_1280x720.png",
+    "zzz-attachment/banners/wallhaven-n6v69l_1280x720.png",
+    "zzz-attachment/banners/wallhaven-39qjjd_2560x1080.png",
+    "001-library/Java核心技术第10版（套装共2册）.md",
+    "000-tips/snippets/自定义图标.md",
+    "000-tips/snippets/背景图片.md",
+    "000-tips/自定义样式/04_彩虹大纲线.md",
+    "000-tips/snippets",
+    "000-tips/自定义样式/02-自定义checkbox.md",
+    "001-library/DevOps入门与实践.md",
+    "000-tips/image/Pasted image 20230521074628.png",
+    "000-tips/image/Pasted image 20230520082754.png",
+    "000-tips/image/Pa20230519214711sted image.png",
+    "003-学习笔记/Golang/Go语言数据库-gorm包配置.md",
+    "002-个人文档/简历/简历.md",
+    "003-学习笔记/Golang/Go语言日志包-zap配置.md",
+    "003-学习笔记/Golang/Go语言读取配置-Viper初始化.md",
+    "003-学习笔记/Golang/Go语言常用文件操作.md",
+    "003-学习笔记/Golang/Go语言常用函数.md",
+    "003-学习笔记/Golang/Go工程化社区实践.md",
+    "003-学习笔记/Golang/Go工程化规范设计.md",
+    "zzz-template/script/dv_github.js",
+    "000-tips/自定义样式",
+    "000-tips/cssclass示例/表格美化",
+    "000-tips/cssclass示例",
+    "未命名",
+    "003-学习笔记/image/mu4CMBACj7xi5HjRBkzZxQ_BBY-oXwwzu.webp",
+    "003-学习笔记/image/uWesUATBDprqRPkKCmvdQy_r4mW_hPaMA.webp",
+    "003-学习笔记/image/xmy1gSKCJRuCMhC3eSgCiW_zzzKZWku4m.webp",
+    "test.css",
+    "zzz-template/script/SwitchViews.js",
+    "zzz-template/script/switchbackground.js"
+  ]
+}

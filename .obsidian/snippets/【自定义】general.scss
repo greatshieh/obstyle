@@ -1,0 +1,17 @@
+@use "./scss/00_monokaipro-color.scss" as *;
+@use "./scss/01_calendar.scss" as *;
+@use "./scss/02_tags.scss" as *;
+@use "./scss/03_checkbox.scss" as *;
+@use "./scss/04_table.scss" as *;
+@use "./scss/05_colorful-highlight.scss" as *;
+@use "./scss/06_inline-code.scss" as *;
+@use "./scss/07_callout.scss" as *;
+@use "./scss/08_admonition.scss" as *;
+@use "./scss/09_rainbow-outline.scss" as *;
+@use "./scss/10_floating-toc.scss" as *;
+@use "./scss/11_image.scss" as *;
+@use "./scss/12_print.scss" as *;
+
+.workspace-leaf-content[data-type="recent-files"] .tree-item-self {
+    padding-left: 2px;
+}

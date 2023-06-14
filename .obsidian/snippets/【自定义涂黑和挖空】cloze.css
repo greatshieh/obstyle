@@ -1,0 +1,281 @@
+/* cssclass: cloze */
+/* 挖空涂黑 */
+/* 
+*~~xx~~* 对应 em>del, background与背景色相同, 鼠标悬浮显示内容
+==~~xx~~== 对应mark>del, 自定义背景色，鼠标悬浮显示内容
+*==~~xx~~==* 对应em>mark>del, 鼠标点击显示内容
+*/
+body .workspace {
+    --cloze-decoration-color: var(--color-cyan);
+    --cloze-decoration-style: dashed;
+    --cloze-bg-color-1: var(--text-color-strong);
+    --cloze-bg-color-2: none;
+}
+
+/* 预览/编辑实时预览视图中未选中时 markdown-preview-view .markdown-source-view */
+:is(.markdown-preview-view,
+    .markdown-source-view).cloze del {
+    text-decoration: underline dashed 1px var(--color-cyan);
+}
+
+/* ~~*xxxx*~~ 删除+斜体 */
+:is(.markdown-preview-view,
+    .markdown-source-view).cloze del>em {
+    color: transparent;
+    font-style: normal;
+}
+
+:is(.markdown-preview-view,
+    .markdown-source-view).cloze del>em:hover {
+    color: var(--accent-strong);
+    transition: all 400ms ease-in-out;
+}
+
+/* ~~==xxxx==~~ 删除+高亮*/
+:is(.markdown-preview-view, .markdown-source-view).cloze del>mark:last-of-type {
+    background-color: var(--color-green);
+    color: transparent;
+}
+
+:is(.markdown-preview-view,
+    .markdown-source-view).cloze del>mark:last-of-type:hover {
+    background-color: transparent;
+    color: var(--accent-strong);
+    transition: all 400ms ease-in-out;
+}
+
+/* ~~==*xxxx*==~~ 删除+高亮+斜体 */
+:is(.markdown-preview-view,
+    .markdown-source-view).cloze del>mark>em {
+    color: transparent;
+    font-style: normal;
+    background-color: var(--color-blue);
+    padding: 0 2px;
+}
+
+:is(.markdown-preview-view,
+    .markdown-source-view).cloze del>mark>em:hover {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+:is(.markdown-preview-view,
+    .markdown-source-view).cloze del>mark>em:active {
+    color: var(--accent-strong);
+    background-color: transparent;
+    transition: all 400ms ease-in-out;
+}
+
+/* 编辑视图源码模式 */
+.markdown-source-view.cloze .cm-strikethrough {
+    text-decoration: underline dashed 1px var(--color-cyan);
+    font-style: normal;
+}
+
+.markdown-source-view.cloze .cm-strikethrough.cm-highlight:not([class*="formatting"]) {
+    background-color: var(--color-green);
+}
+
+.markdown-source-view.cloze .cm-strikethrough.cm-em.cm-highlight.cm-em:not([class*="formatting"]) {
+    background-color: var(--color-blue);
+}
+
+
+
+
+
+/* ==~~xxxx~~== 高亮+删除线, 鼠标悬浮显示结果 */
+/* .markdown-source-view.is-live-preview.cloze .cm-highlight.cm-strikethrough:not([class*="formatting"]) {
+    background-color: var(--color-green) !important;
+    color: transparent;
+    text-decoration: underline dashed 1px var(--color-cyan);
+} */
+
+/* 鼠标悬浮 */
+/* .markdown-source-view.is-live-preview.cloze .cm-highlight.cm-strikethrough:hover {
+    background-color: transparent !important;
+    color: var(--accent-strong) !important;
+    transition: all 400ms ease-in-out;
+} */
+
+/* *==~~~xxxx~~~==* 斜体+高亮+删除 */
+/* .markdown-source-view.is-live-preview.cloze .cm-em.cm-highlight.cm-strikethrough:not([class*="formatting"]) {
+    color: transparent !important;
+    background-color: transparent !important;
+    padding: 0 2px;
+    text-decoration: underline dashed 1px var(--color-cyan) !important;
+} */
+
+
+/* .markdown-source-view.cloze .cm-formatting.cm-formatting-highlight.cm-highlight~span.cm-formatting-strikethrough.cm-highlight.cm-strikethrough~span.cm-highlight.cm-strikethrough:not(.cm-em),
+.markdown-source-view.cloze *:not([class*="cm-formatting-em"]).cm-formatting.cm-formatting-highlight.cm-highlight~span.cm-formatting-strikethrough.cm-highlight.cm-strikethrough {
+    text-decoration: underline dashed 1px var(--color-cyan);
+    background-color: var(--color-green) !important;
+}
+
+.markdown-source-view.cloze .cm-formatting.cm-formatting-highlight.cm-highlight~.cm-formatting.cm-formatting-strikethrough~span.cm-highlight.cm-strikethrough:not(.cm-em):hover {
+    background-color: var(--color-green);
+    color: var(--accent-strong);
+    transition: all 400ms ease-in-out;
+} */
+/* 
+.markdown-source-view.cloze .cm-em.cm-formatting.cm-formatting-em.cm-em.cm-formatting.cm-formatting-em~.cm-em.cm-formatting.cm-formatting-highlight.cm-highlight~.cm-em.cm-formatting.cm-formatting-strikethrough.cm-highlight.cm-strikethrough~span.cm-em.cm-highlight.cm-strikethrough,
+.markdown-source-view.cloze .cm-em.cm-formatting.cm-formatting-em.cm-em.cm-formatting.cm-formatting-em~.cm-em.cm-formatting.cm-formatting-highlight.cm-highlight~.cm-em.cm-formatting.cm-formatting-strikethrough.cm-highlight.cm-strikethrough {
+    color: var(--accent-strong) !important;
+    text-decoration: underline var(--cloze-decoration-2) var(--cloze-decoration-color-2) !important;
+}
+
+body:not(.remove-cloze-style) .cm-s-obsidian .cm-em.cm-formatting.cm-formatting-em.cm-em.cm-formatting.cm-formatting-em~.cm-em.cm-formatting.cm-formatting-highlight.cm-highlight~.cm-em.cm-formatting.cm-formatting-strikethrough.cm-highlight.cm-strikethrough~span.cm-em.cm-highlight.cm-strikethrough,
+body:not(.remove-cloze-style) .cm-s-obsidian .cm-em.cm-formatting.cm-formatting-em.cm-em.cm-formatting.cm-formatting-em~.cm-em.cm-formatting.cm-formatting-highlight.cm-highlight~.cm-em.cm-formatting.cm-formatting-strikethrough.cm-highlight.cm-strikethrough {
+    background-color: transparent !important;
+}
+
+body:not(.remove-cloze-style) .markdown-source-view:not([class*="cm5"]) .cm-em.cm-formatting.cm-formatting-em.cm-em.cm-formatting.cm-formatting-em~.cm-em.cm-formatting.cm-formatting-highlight.cm-highlight~.cm-em.cm-formatting.cm-formatting-strikethrough.cm-highlight.cm-strikethrough~span.cm-em.cm-highlight.cm-strikethrough~.cm-em.cm-formatting.cm-formatting-highlight.cm-highlight,
+.markdown-source-view:not([class*="cm5"]).cloze .cm-em.cm-formatting.cm-formatting-em.cm-em.cm-formatting.cm-formatting-em~.cm-em.cm-formatting.cm-formatting-highlight.cm-highlight~.cm-em.cm-formatting.cm-formatting-strikethrough.cm-highlight.cm-strikethrough~span.cm-em.cm-highlight.cm-strikethrough~.cm-em.cm-formatting.cm-formatting-highlight.cm-highlight {
+    background-color: var(--bg-color-highlight-1) !important;
+    color: var(--color-highlight-1);
+    font-style: normal;
+}
+
+
+
+
+
+body:not(.remove-cloze-style) .markdown-source-view.is-live-preview .cm-em.cm-strikethrough,
+.markdown-source-view.is-live-preview.cloze .cm-em.cm-strikethrough {
+    background-color: var(--cloze-bg-color-3);
+    color: var(--cloze-bg-color-3);
+    font-style: normal;
+    text-decoration: underline var(--cloze-decoration-3) var(--cloze-decoration-color-3);
+}
+
+body:not(.remove-cloze-style) .markdown-source-view.is-live-preview .cm-em.cm-strikethrough:hover,
+.markdown-source-view.is-live-preview.cloze .cm-em.cm-strikethrough:hover {
+    background-color: transparent !important;
+    color: var(--accent-strong) !important;
+    transition: all 400ms ease-in-out;
+}
+
+body:not(.remove-cloze-style) .cm-em.cm-formatting.cm-formatting-em~.cm-em.cm-formatting.cm-formatting-strikethrough.cm-strikethrough,
+.markdown-source-view.cloze .cm-em.cm-formatting.cm-formatting-em~.cm-em.cm-formatting.cm-formatting-strikethrough.cm-strikethrough {
+    color: var(--accent-strong);
+    text-decoration: none;
+}
+
+body:not(.remove-cloze-style) .cm-em.cm-formatting.cm-formatting-em~.cm-em.cm-formatting.cm-formatting-strikethrough.cm-strikethrough~span.cm-em.cm-strikethrough:not([class*="formatting"]),
+.markdown-source-view.cloze .cm-em.cm-formatting.cm-formatting-em~.cm-em.cm-formatting.cm-formatting-strikethrough.cm-strikethrough~span.cm-em.cm-strikethrough:not([class*="formatting"]) {
+    font-style: normal;
+    color: var(--accent-strong);
+    text-decoration: underline var(--cloze-decoration-3) var(--cloze-decoration-color-3);
+} */
+
+/* span.cm-strong.cm-em.cm-highlight {
+    background-image: initial;
+    background-clip: initial;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: var(--strong-em-highlight-color);
+    background-color: var(--text-highlight-bg);
+} */
+
+
+/* cloze */
+:is(.markdown-preview-view, .markdown-rendered) pre.language-note-cloze code.language-note-cloze,
+.popover :is(.markdown-preview-view, .markdown-rendered) pre.language-note-cloze code.language-note-cloze {
+    color: var(--accent-strong) !important;
+    background-color: var(--accent-strong) !important;
+    display: block;
+    padding: 0px !important;
+    text-shadow: none;
+    margin: 1em 0.7em 0;
+    font-size: var(--font-size-cloze) !important;
+}
+
+:is(.markdown-preview-view, .markdown-rendered) pre.language-note-cloze,
+.popover :is(.markdown-preview-view, .markdown-rendered) pre.language-note-cloze {
+    background-color: transparent;
+}
+
+code.language-note-cloze.is-loaded:hover {
+    cursor: pointer;
+}
+
+:is(.markdown-preview-view, .markdown-rendered) pre.language-note-cloze code.language-note-cloze.is-loaded:active,
+.popover :is(.markdown-preview-view, .markdown-rendered) pre.language-note-cloze code.language-note-cloze.is-loaded:active {
+    background-color: transparent !important;
+}
+
+pre.language-note-cloze::before {
+    content: "TO RECALL";
+    color: var(--note-cloze);
+    font-weight: 800;
+    left: 22px;
+}
+
+
+
+/*cloze*/
+/* :is(.markdown-preview-view, .markdown-rendered).cloze em>del {
+    color: transparent;
+    font-style: normal;
+    -webkit-text-decoration: underline var(--cloze-decoration-style) 1px var(--cloze-decoration-color);
+    text-decoration: underline var(--cloze-decoration-style) 1px var(--cloze-decoration-color);
+    padding: 0px 2px;
+    transition: all 400ms ease-in-out;
+}
+
+:is(.markdown-preview-view, .markdown-rendered).cloze em>del:hover {
+    color: var(--accent-strong);
+}
+
+
+:is(.markdown-preview-view, .markdown-rendered).cloze :not(em)>mark>del {
+    background-color: var(--color-green);
+    color: transparent;
+    padding: 0px 2px;
+    transition: all 400ms ease-in-out;
+    -webkit-text-decoration: underline var(--cloze-decoration-style) 1px var(--cloze-decoration-color);
+    text-decoration: underline var(--cloze-decoration-style) 1px var(--cloze-decoration-color);
+}
+
+:is(.markdown-preview-view, .markdown-rendered).cloze :not(em)>mark>del:hover {
+    background-color: transparent !important;
+    color: var(--accent-strong);
+}
+
+:is(.markdown-preview-view, .markdown-rendered).cloze em>mark>del {
+    color: transparent;
+    background-color: var(--color-blue);
+    padding: 0 2px;
+    -webkit-text-decoration: underline var(--cloze-decoration-style) 1px var(--cloze-decoration-color);
+    text-decoration: underline var(--cloze-decoration-style) 1px var(--cloze-decoration-color);
+    transition: all 400ms ease-in-out;
+}
+
+:is(.markdown-preview-view, .markdown-rendered).cloze em>mark>del:hover {
+    cursor: pointer;
+}
+
+:is(.markdown-preview-view, .markdown-rendered).cloze em>mark>del:active {
+    color: var(--accent-strong);
+    background-color: transparent;
+} */
+
+/* 实时预览模式下的通用设置 */
+/* .markdown-source-view.is-live-preview.cloze em>del,
+.markdown-source-view.is-live-preview.cloze em>mark,
+.markdown-source-view.is-live-preview.cloze em>mark>del,
+.markdown-source-view.is-live-preview.cloze .cm-em.cm-strikethrough:not([class*="formatting"]),
+.markdown-source-view.is-live-preview.cloze .cm-highlight.cm-strikethrough:not([class*="formatting"]) {
+    -webkit-text-decoration: underline var(--cloze-decoration-style) 1px var(--cloze-decoration-color);
+    text-decoration: underline var(--cloze-decoration-style) 1px var(--cloze-decoration-color);
+}
+
+.markdown-source-view.is-live-preview.cloze :not(em)mark>del,
+.markdown-source-view.is-live-preview.cloze .cm-highlight.cm-strikethrough:not(.cm-em):not([class*="formatting"]) {
+    background-color: var(--color-blue);
+}
+
+.markdown-source-view.is-live-preview.cloze em>mark>del,
+.markdown-source-view.is-live-preview.cloze .cm-em.cm-highlight.cm-strikethrough:not([class*="formatting"]) {
+    background-color: var(--color-green);
+} */

@@ -1,0 +1,496 @@
+
+/********彩虹大纲线片段********/
+/* RAINBOW INDENT COLORS from https://gist.github.com/GitMurf/5122c0c8405ffa36a03049d9f4434bf4 */
+
+:root {
+    --list-padding: 24px;
+    --accent-1-rgb: 56, 85, 139;
+    --accent-2-rgb: 95, 56, 139;
+    --accent-3-rgb: 139, 56, 132;
+    --accent-4-rgb: 56, 139, 56;
+    --accent-5-rgb: 224, 142, 19;
+    --accent-6-rgb: 211, 103, 103;
+    --accent-7-rgb: 0, 171, 132;
+    --accent-8-rgb: 0, 163, 224;
+}
+
+body :is(ol, ul) :is(ol, ul) {
+    position: relative;
+}
+
+body :is(ol, ul) :is(ol, ul)::before {
+    content: "";
+    border-right: 1.5px solid var(--background-modifier-border);
+    position: absolute;
+    left: -1.1em;
+    height: 100%;
+}
+
+body .kanban :is(ol, ul) ul::before {
+    display: none;
+}
+
+body ul>li:not(.task-list-item) {
+    border-left: none !important;
+}
+
+body ol>li {
+    border-left: none !important;
+}
+
+body ol,
+body ol ol,
+body ol ol ol,
+body ol ul ol,
+body ol ol ol ol,
+body ol ol ul ol,
+body ol ul ol ol {
+    list-style: decimal;
+}
+
+body ol>li::marker {
+    font-weight: normal;
+    color: var(--text-normal);
+}
+
+body .HyperMD-list-line-1 .cm-formatting-list {
+    color: rgb(var(--accent-1-rgb)) !important;
+}
+
+body .HyperMD-list-line-1 .cm-formatting-task {
+    color: rgb(var(--accent-1-rgb)) !important;
+}
+
+body .mod-cm6 .HyperMD-list-line-1 .task-list-item-checkbox[data-task="x"]:checked {
+    background-color: rgba(var(--accent-1-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-1 .task-list-item-checkbox {
+    border-color: rgba(var(--accent-1-rgb), 0.7);
+}
+
+body .cm-hmd-list-indent>span.cm-tab:nth-child(8n + 1)::before {
+    border-color: rgba(var(--accent-1-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-1>span.list-bullet {
+    color: rgb(var(--accent-1-rgb));
+}
+
+body .HyperMD-list-line-2 .cm-formatting-list {
+    color: rgb(var(--accent-2-rgb)) !important;
+}
+
+body .HyperMD-list-line-2 .cm-formatting-task {
+    color: rgb(var(--accent-2-rgb)) !important;
+}
+
+body .mod-cm6 .HyperMD-list-line-2 .task-list-item-checkbox[data-task="x"]:checked {
+    background-color: rgba(var(--accent-2-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-2 .task-list-item-checkbox {
+    border-color: rgba(var(--accent-2-rgb), 0.7);
+}
+
+body .cm-hmd-list-indent>span.cm-tab:nth-child(8n + 2)::before {
+    border-color: rgba(var(--accent-2-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-2>span.list-bullet {
+    color: rgb(var(--accent-2-rgb));
+}
+
+body .HyperMD-list-line-3 .cm-formatting-list {
+    color: rgb(var(--accent-3-rgb)) !important;
+}
+
+body .HyperMD-list-line-3 .cm-formatting-task {
+    color: rgb(var(--accent-3-rgb)) !important;
+}
+
+body .mod-cm6 .HyperMD-list-line-3 .task-list-item-checkbox[data-task="x"]:checked {
+    background-color: rgba(var(--accent-3-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-3 .task-list-item-checkbox {
+    border-color: rgba(var(--accent-3-rgb), 0.7);
+}
+
+body .cm-hmd-list-indent>span.cm-tab:nth-child(8n + 3)::before {
+    border-color: rgba(var(--accent-3-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-3>span.list-bullet {
+    color: rgb(var(--accent-3-rgb));
+}
+
+body .HyperMD-list-line-4 .cm-formatting-list {
+    color: rgb(var(--accent-4-rgb)) !important;
+}
+
+body .HyperMD-list-line-4 .cm-formatting-task {
+    color: rgb(var(--accent-4-rgb)) !important;
+}
+
+body .mod-cm6 .HyperMD-list-line-4 .task-list-item-checkbox[data-task="x"]:checked {
+    background-color: rgba(var(--accent-4-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-4 .task-list-item-checkbox {
+    border-color: rgba(var(--accent-4-rgb), 0.7);
+}
+
+body .cm-hmd-list-indent>span.cm-tab:nth-child(8n + 4)::before {
+    border-color: rgba(var(--accent-4-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-4>span.list-bullet {
+    color: rgb(var(--accent-4-rgb));
+}
+
+body .HyperMD-list-line-5 .cm-formatting-list {
+    color: rgb(var(--accent-5-rgb)) !important;
+}
+
+body .HyperMD-list-line-5 .cm-formatting-task {
+    color: rgb(var(--accent-5-rgb)) !important;
+}
+
+body .mod-cm6 .HyperMD-list-line-5 .task-list-item-checkbox[data-task="x"]:checked {
+    background-color: rgba(var(--accent-5-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-5 .task-list-item-checkbox {
+    border-color: rgba(var(--accent-5-rgb), 0.7);
+}
+
+body .cm-hmd-list-indent>span.cm-tab:nth-child(8n + 5)::before {
+    border-color: rgba(var(--accent-5-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-5>span.list-bullet {
+    color: rgb(var(--accent-5-rgb));
+}
+
+body .HyperMD-list-line-6 .cm-formatting-list {
+    color: rgb(var(--accent-6-rgb)) !important;
+}
+
+body .HyperMD-list-line-6 .cm-formatting-task {
+    color: rgb(var(--accent-6-rgb)) !important;
+}
+
+body .mod-cm6 .HyperMD-list-line-6 .task-list-item-checkbox[data-task="x"]:checked {
+    background-color: rgba(var(--accent-6-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-6 .task-list-item-checkbox {
+    border-color: rgba(var(--accent-6-rgb), 0.7);
+}
+
+body .cm-hmd-list-indent>span.cm-tab:nth-child(8n + 6)::before {
+    border-color: rgba(var(--accent-6-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-6>span.list-bullet {
+    color: rgb(var(--accent-6-rgb));
+}
+
+body .HyperMD-list-line-7 .cm-formatting-list {
+    color: rgb(var(--accent-7-rgb)) !important;
+}
+
+body .HyperMD-list-line-7 .cm-formatting-task {
+    color: rgb(var(--accent-7-rgb)) !important;
+}
+
+body .mod-cm6 .HyperMD-list-line-7 .task-list-item-checkbox[data-task="x"]:checked {
+    background-color: rgba(var(--accent-7-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-7 .task-list-item-checkbox {
+    border-color: rgba(var(--accent-7-rgb), 0.7);
+}
+
+body .cm-hmd-list-indent>span.cm-tab:nth-child(8n + 7)::before {
+    border-color: rgba(var(--accent-7-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-7>span.list-bullet {
+    color: rgb(var(--accent-7-rgb));
+}
+
+body .HyperMD-list-line-8 .cm-formatting-list {
+    color: rgb(var(--accent-8-rgb)) !important;
+}
+
+body .HyperMD-list-line-8 .cm-formatting-task {
+    color: rgb(var(--accent-8-rgb)) !important;
+}
+
+body .mod-cm6 .HyperMD-list-line-8 .task-list-item-checkbox[data-task="x"]:checked {
+    background-color: rgba(var(--accent-8-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-8 .task-list-item-checkbox {
+    border-color: rgba(var(--accent-8-rgb), 0.7);
+}
+
+body .cm-hmd-list-indent>span.cm-tab:nth-child(8n)::before {
+    border-color: rgba(var(--accent-8-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-7>span.list-bullet {
+    color: rgb(var(--accent-8-rgb));
+}
+
+body .CodeMirror-foldgutter-open.CodeMirror-guttermarker-subtle::after {
+    color: rgb(var(--accent-1-rgb));
+}
+
+/*预览模式
+  /*无序列表 任务框*/
+body ul li .task-list-item-checkbox {
+    border-color: rgba(var(--accent-1-rgb), 0.7);
+}
+
+body ul ul li .task-list-item-checkbox {
+    border-color: rgba(var(--accent-2-rgb), 0.7);
+}
+
+body ul ul ul li .task-list-item-checkbox {
+    border-color: rgba(var(--accent-3-rgb), 0.7);
+}
+
+body ul ul ul ul li .task-list-item-checkbox {
+    border-color: rgba(var(--accent-4-rgb), 0.7);
+}
+
+body ul ul ul ul ul li .task-list-item-checkbox {
+    border-color: rgba(var(--accent-5-rgb), 0.7);
+}
+
+body ul ul ul ul ul ul li .task-list-item-checkbox {
+    border-color: rgba(var(--accent-6-rgb), 0.7);
+}
+
+body ul ul ul ul ul ul ul li .task-list-item-checkbox {
+    border-color: rgba(var(--accent-7-rgb), 0.7);
+}
+
+body ul ul ul ul ul ul ul ul li .task-list-item-checkbox {
+    border-color: rgba(var(--accent-7-rgb), 0.7);
+}
+
+/*无序列表 大纲线*/
+body ul ul::before {
+    border-color: rgba(var(--accent-1-rgb), 0.7) !important;
+}
+
+body li ul ul::before {
+    border-color: rgba(var(--accent-2-rgb), 0.7) !important;
+}
+
+body li ul ul ul::before {
+    border-color: rgba(var(--accent-3-rgb), 0.7) !important;
+}
+
+body li ul ul ul ul::before {
+    border-color: rgba(var(--accent-4-rgb), 0.7) !important;
+}
+
+body li ul ul ul ul ul::before {
+    border-color: rgba(var(--accent-5-rgb), 0.7) !important;
+}
+
+body li ul ul ul ul ul ul::before {
+    border-color: rgba(var(--accent-6-rgb), 0.7) !important;
+}
+
+body li ul ul ul ul ul ul ul::before {
+    border-color: rgba(var(--accent-7-rgb), 0.7) !important;
+}
+
+body li ul ul ul ul ul ul ul ul::before {
+    border-color: rgba(var(--accent-8-rgb), 0.7) !important;
+}
+
+body li ul ul ul ul ul ul ul ul ul::before {
+    border-color: rgba(var(--accent-1-rgb), 0.7) !important;
+}
+
+/*任务有序列表 大纲线*/
+body ol ol::before {
+    border-color: rgba(var(--accent-1-rgb), 0.7) !important;
+}
+
+body li ol ol::before {
+    border-color: rgba(var(--accent-2-rgb), 0.7) !important;
+}
+
+body li ol ol ol::before {
+    border-color: rgba(var(--accent-3-rgb), 0.7) !important;
+}
+
+body li ol ol ol ol::before {
+    border-color: rgba(var(--accent-4-rgb), 0.7) !important;
+}
+
+body li ol ol ol ol ol::before {
+    border-color: rgba(var(--accent-5-rgb), 0.7) !important;
+}
+
+body li ol ol ol ol ol ol::before {
+    border-color: rgba(var(--accent-6-rgb), 0.7) !important;
+}
+
+body li ol ol ol ol ol ol ol::before {
+    border-color: rgba(var(--accent-7-rgb), 0.7) !important;
+}
+
+body li ol ol ol ol ol ol ol ol::before {
+    border-color: rgba(var(--accent-8-rgb), 0.7) !important;
+}
+
+body li ol ol ol ol ol ol ol ol::before {
+    border-color: rgba(var(--accent-1-rgb), 0.7) !important;
+}
+
+/*任务有序列表 选择框*/
+body :is(.markdown-preview-view, .markdown-rendered) li[data-task="x"] .task-list-item-checkbox:checked {
+    background-color: rgb(var(--accent-1-rgb), 0.7);
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li[data-task="x"] .task-list-item-checkbox:checked {
+    background-color: rgb(var(--accent-2-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li[data-task="x"] .task-list-item-checkbox:checked {
+    background-color: rgb(var(--accent-3-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li[data-task="x"] .task-list-item-checkbox:checked {
+    background-color: rgb(var(--accent-4-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li[data-task="x"] .task-list-item-checkbox:checked {
+    background-color: rgb(var(--accent-5-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li li[data-task="x"] .task-list-item-checkbox:checked {
+    background-color: rgb(var(--accent-6-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li li li[data-task="x"] .task-list-item-checkbox:checked {
+    background-color: rgb(var(--accent-7-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li li li li[data-task="x"] .task-list-item-checkbox:checked {
+    background-color: rgb(var(--accent-8-rgb), 0.7) !important;
+}
+
+/*任务有序列表 选择框未选择*/
+body :is(.markdown-preview-view, .markdown-rendered) li .task-list-item-checkbox {
+    border-color: rgba(var(--accent-1-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li .task-list-item-checkbox {
+    border-color: rgba(var(--accent-2-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li .task-list-item-checkbox {
+    border-color: rgba(var(--accent-3-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li .task-list-item-checkbox {
+    border-color: rgba(var(--accent-4-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li .task-list-item-checkbox {
+    border-color: rgba(var(--accent-5-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li li .task-list-item-checkbox {
+    border-color: rgba(var(--accent-6-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li li li .task-list-item-checkbox {
+    border-color: rgba(var(--accent-7-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li li li li .task-list-item-checkbox {
+    border-color: rgba(var(--accent-8-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li .list-collapse-indicator.collapse-indicator.collapse-icon::before {
+    color: rgb(var(--accent-1-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li .list-collapse-indicator.collapse-indicator.collapse-icon::before {
+    color: rgb(var(--accent-2-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li .list-collapse-indicator.collapse-indicator.collapse-icon::before {
+    color: rgb(var(--accent-3-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li .list-collapse-indicator.collapse-indicator.collapse-icon::before {
+    color: rgb(var(--accent-4-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li .list-collapse-indicator.collapse-indicator.collapse-icon::before {
+    color: rgb(var(--accent-5-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li li .list-collapse-indicator.collapse-indicator.collapse-icon::before {
+    color: rgb(var(--accent-6-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li li li .list-collapse-indicator.collapse-indicator.collapse-icon::before {
+    color: rgb(var(--accent-7-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li li li li .list-collapse-indicator.collapse-indicator.collapse-icon::before {
+    color: rgb(var(--accent-8-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) ul>li::marker,
+body :is(.markdown-preview-view, .markdown-rendered) ol>li::marker {
+    color: rgb(var(--accent-1-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) ul>li ul>li::marker,
+body :is(.markdown-preview-view, .markdown-rendered) ol>li ol>li::marker {
+    color: rgb(var(--accent-2-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) ul>li ul>li ul>li::marker,
+body :is(.markdown-preview-view, .markdown-rendered) ol>li ol>li ol>li::marker {
+    color: rgb(var(--accent-3-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) ul>li ul>li ul>li ul>li::marker,
+body :is(.markdown-preview-view, .markdown-rendered) ol>li ol>li ol>li ol>li::marker {
+    color: rgb(var(--accent-4-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) ul>li ul>li ul>li ul>li ul>li::marker,
+body :is(.markdown-preview-view, .markdown-rendered) ol>li ol>li ol>li ol>li ol>li::marker {
+    color: rgb(var(--accent-5-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) ul>li ul>li ul>li ul>li ul>li ul>li::marker,
+body :is(.markdown-preview-view, .markdown-rendered) ol>li ol>li ol>li ol>li ol>li ol>li::marker {
+    color: rgb(var(--accent-6-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) ul>li ul>li ul>li ul>li ul>li ul>li ul>li::marker,
+body :is(.markdown-preview-view, .markdown-rendered) ol>li ol>li ol>li ol>li ol>li ol>li ol>li::marker {
+    color: rgb(var(--accent-7-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) ul>li ul>li ul>li ul>li ul>li ul>li ul>li ul>li::marker,
+body :is(.markdown-preview-view, .markdown-rendered) ol>li ol>li ol>li ol>li ol>li ol>li ol>li ol>li::marker {
+    color: rgb(var(--accent-8-rgb));
+}

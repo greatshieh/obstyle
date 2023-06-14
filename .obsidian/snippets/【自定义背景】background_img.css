@@ -1,0 +1,107 @@
+/* @settings
+name: Switch Background Image
+id: switch-bg-img
+settings:
+  - 
+    id: background-image
+    title: use background image
+    title.zh: 使用背景图片
+    type: class-toggle
+    default: false
+  -
+    id: background-theme-light
+    title: Custom Theme light (url)
+    title.zh: 自定义浅色主题背景
+    description: Use the format in the Default below for an Online image. Use the following format to point to a local file - url("app://local/D:/Documents/Pictures/Unsplash/UnsplashTemp.jpg").
+    description.zh: 使用Default内格式设置网络图片。使用以下格式设置本地图片  url("app://local/D:/Documents/Pictures/Unsplash/UnsplashTemp.jpg")
+    type: variable-text
+    default: url(https://)
+  -
+    id: background-theme-dark
+    title: Custom Theme Dark (url)
+    title.zh: 自定义深色主题背景
+    description: Use the format in the Default below for an Online image. Use the following format to point to a local file - url("app://local/D:/Documents/Pictures/Unsplash/UnsplashTemp.jpg").
+    description.zh: 使用Default内格式设置网络图片。使用以下格式设置本地图片  url("app://local/D:/Documents/Pictures/Unsplash/UnsplashTemp.jpg")
+    type: variable-text
+    default: url(https://)
+  -
+    id: blur-depth
+    title: Blur Radius
+    title.zh: 模糊程度
+    description: To adjust the radius of blur
+    description.zh: 调整背景壁纸模糊程度
+    type: variable-number-slider
+    default: 10
+    format: px
+    min: 0
+    max: 30
+    step: 1
+  - 
+    id: brightness-4-bg
+    title: Brightness of Image
+    title.zh: 图片亮度
+    description: To adjust the brightness
+    description.zh: 调整背景壁纸亮度
+    type: variable-number-slider
+    default: 0.9
+    min: 0.3
+    max: 1.5
+    step: 0.1
+  - 
+    id: saturate-4-bg
+    title: Saturation of Image
+    title.zh: 图片饱和度
+    description: To adjust the saturation
+    description.zh: 调整背景壁纸饱和度
+    type: variable-number-slider
+    default: 1
+    min: 0
+    max: 2
+    step: 0.1
+*/
+/* 不使用背景图片时, 不显示图片设置 */
+body:not(.background-image) .setting-item[data-id=background-image]~* {
+    display: none;
+}
+
+/* 设置背景色 */
+body.background-image .app-container .workspace-split {
+    --background-primary: transparent;
+    --background-secondary: transparent;
+}
+
+body.background-image .workspace-tab-header-container {
+    background-color: transparent;
+}
+
+body.background-image .workspace::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -37px;
+    right: -15px;
+    bottom: 0;
+    left: -15px;
+    filter: blur(var(--blur-depth)) brightness(var(--brightness-4-bg)) saturate(var(--saturate-4-bg));
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body.theme-dark.background-image .workspace::before {
+    background-image: var(--theme-background);
+}
+
+body.theme-light.background-image .workspace::before {
+    background-image: var(--background-theme-light);
+}
+
+/* 配色背景图, 设置背景色 */
+body.theme-dark.background-image {
+    --theme-background: var(--background-theme-dark);
+    --background-theme-dark: url("https://w.wallhaven.cc/full/zy/wallhaven-zypd7w.png");
+}
+
+body.theme-light.background-image {
+    --theme-background: var(--background-theme-light);
+    --background-theme-light: url("https://w.wallhaven.cc/full/zy/wallhaven-zyokvy.png");
+}

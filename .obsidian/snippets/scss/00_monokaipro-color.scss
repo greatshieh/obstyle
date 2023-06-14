@@ -1,0 +1,261 @@
+body .nav-files-container {
+    --text-normal: #ece7e2;
+    // --nav-item-color-active: #ffb000;
+    // --interactive-accent: #ff9500;
+    // --print-h1-color: #1985fffa;
+    // --print-h2-color: #d6c62b;
+    // --print-h3-color: #05e97d;
+    // --print-h4-color: #0a8eeb;
+    // --print-h5-color: #c612d5;
+}
+
+.theme-light {
+    --p-kanban-bg-color: #d3d3d32d;
+    --p-kanban-border-color: #a0a0a060;
+    --p-kanban-card-color-1: #ffffff80;
+    --p-kanban-card-color-2: #ffffff;
+    --p-kanban-color-6: #f18e8e65;
+    --p-kanban-color-5: #eeb36f65;
+    --p-kanban-color-4: #d1d77f65;
+    --p-kanban-color-3: #8ce38465;
+    --p-kanban-color-2: #7cdddd65;
+    --p-kanban-color-1: #52aaf365;
+    --p-kanban-color-8: #ba8be165;
+    --p-kanban-color-7: #e677e065;
+    --p-kanban-color-simple: #cdcdcd2c;
+    --p-kanban-color-shadow: #cfcfcf4d;
+}
+
+.theme-dark {
+    --p-kanban-bg-color: #6c6c6c42;
+    --p-kanban-border-color: transparent;
+    --p-kanban-card-color-1: #0000003f;
+    --p-kanban-card-color-2: #41414136;
+    --p-kanban-color-6: #f3424252;
+    --p-kanban-color-5: #eb973752;
+    --p-kanban-color-4: #d2dd3852;
+    --p-kanban-color-3: #38ce2a52;
+    --p-kanban-color-2: #2ec4c452;
+    --p-kanban-color-1: #3496e652;
+    --p-kanban-color-8: #b962ff52;
+    --p-kanban-color-7: #e45bdd52;
+    --p-kanban-color-simple: #8e8e8e41;
+    --p-kanban-color-shadow: #0000004d;
+}
+
+
+.theme-light .callout-content.admonition-content button {
+    --button-text-color: #606266;
+    --button-bg-color: #ffffff;
+    --button-border-color: #dcdfe6;
+    --button-hover-text-color: #409eff;
+    --button-hover-bg-color: #ecf5ff;
+    --button-hover-border-color: #c6e2ff;
+}
+
+.theme-light .callout-content.admonition-content button.is-plain {
+    --button-text-color: #606266;
+    --button-bg-color: #ffffff;
+    --button-border-color: #dcdfe6;
+    --button-hover-text-color: #409eff;
+    --button-hover-bg-color: #ffffff;
+    --button-hover-border-color: #409eff;
+}
+
+.theme-light .callout-content.admonition-content button.is-primary {
+    --button-text-color: #ffffff;
+    --button-bg-color: #409eff;
+    --button-border-color: #409eff;
+    --button-hover-text-color: #ffffff;
+    --button-hover-bg-color: #79bbff;
+    --button-hover-border-color: #79bbff;
+}
+
+.theme-light .callout-content.admonition-content button.is-primary.is-plain {
+    --button-text-color: #409eff;
+    --button-bg-color: #ecf5ff;
+    --button-border-color: #a0cfff;
+    --button-hover-text-color: #ffffff;
+    --button-hover-bg-color: #409eff;
+    --button-hover-border-color: #409eff;
+}
+
+.theme-light .callout-content.admonition-content button.is-success {
+    --button-text-color: #ffffff;
+    --button-bg-color: #67c23a;
+    --button-border-color: #67c23a;
+    --button-hover-text-color: #ffffff;
+    --button-hover-bg-color: #95d475;
+    --button-hover-border-color: #95d475;
+}
+
+.theme-light .callout-content.admonition-content button.is-success.is-plain {
+    --button-text-color: #67c23a;
+    --button-bg-color: #f0f9eb;
+    --button-border-color: #b3e19d;
+    --button-hover-text-color: #ffffff;
+    --button-hover-bg-color: #67c23a;
+    --button-hover-border-color: #67c23a;
+}
+
+.theme-light .callout-content.admonition-content button.is-info {
+    --button-text-color: #ffffff;
+    --button-bg-color: #909399;
+    --button-border-color: #909399;
+    --button-hover-text-color: #ffffff;
+    --button-hover-bg-color: #b1b3b8;
+    --button-hover-border-color: #b1b3b8;
+}
+
+.theme-light .callout-content.admonition-content button.is-info.is-plain {
+    --button-text-color: #909399;
+    --button-bg-color: #f4f4f5;
+    --button-border-color: #c8c9cc;
+    --button-hover-text-color: #ffffff;
+    --button-hover-bg-color: #909399;
+    --button-hover-border-color: #909399;
+}
+
+.theme-light .callout-content.admonition-content button.is-warning {
+    --button-text-color: #ffffff;
+    --button-bg-color: #e6a23c;
+    --button-border-color: #e6a23c;
+    --button-hover-text-color: #ffffff;
+    --button-hover-bg-color: #eebe77;
+    --button-hover-border-color: #eebe77;
+}
+
+.theme-light .callout-content.admonition-content button.is-warning.is-plain {
+    --button-text-color: #e6a23c;
+    --button-bg-color: #fdf6ec;
+    --button-border-color: #f3d19e;
+    --button-hover-text-color: #ffffff;
+    --button-hover-bg-color: #e6a23c;
+    --button-hover-border-color: #e6a23c;
+}
+
+.theme-light .callout-content.admonition-content button.is-danger {
+    --button-text-color: #ffffff;
+    --button-bg-color: #f56c6c;
+    --button-border-color: #f56c6c;
+    --button-hover-text-color: #ffffff;
+    --button-hover-bg-color: #f89898;
+    --button-hover-border-color: #f89898;
+}
+
+.theme-light .callout-content.admonition-content button.is-danger.is-plain {
+    --button-text-color: #f56c6c;
+    --button-bg-color: #fef0f0;
+    --button-border-color: #fab6b6;
+    --button-hover-text-color: #ffffff;
+    --button-hover-bg-color: #f56c6c;
+    --button-hover-border-color: #f56c6c;
+}
+
+.theme-dark .callout-content.admonition-content button {
+    --button-text-color: #cfd3dc;
+    --button-bg-color: transparent;
+    --button-border-color: #4c4d4f;
+    --button-hover-text-color: #409eff;
+    --button-hover-bg-color: #18222c;
+    --button-hover-border-color: #213d5b;
+}
+
+.theme-dark .callout-content.admonition-content button.is-plain {
+    --button-text-color: #cfd3dc;
+    --button-bg-color: transparent;
+    --button-border-color: #4c4d4f;
+    --button-hover-text-color: #409eff;
+    --button-hover-bg-color: transparent;
+    --button-hover-border-color: #409eff;
+}
+
+.theme-dark .callout-content.admonition-content button.is-primary {
+    --button-text-color: #ffffff;
+    --button-bg-color: #409eff;
+    --button-border-color: #409eff;
+    --button-hover-text-color: #ffffff;
+    --button-hover-bg-color: #3375b9;
+    --button-hover-border-color: #3375b9;
+}
+
+.theme-dark .callout-content.admonition-content button.is-primary.is-plain {
+    --button-text-color: #1890ff;
+    --button-bg-color: #18222c;
+    --button-border-color: #2a598a;
+    --button-hover-text-color: #ffffff;
+    --button-hover-bg-color: #1890ff;
+    --button-hover-border-color: #1890ff;
+}
+
+.theme-dark .callout-content.admonition-content button.is-success {
+    --button-text-color: #ffffff;
+    --button-bg-color: #67c23a;
+    --button-border-color: #67c23a;
+    --button-hover-text-color: #ffffff;
+    --button-hover-bg-color: #4e8e2f;
+    --button-hover-border-color: #4e8e2f;
+}
+
+.theme-dark .callout-content.admonition-content button.is-success.is-plain {
+    --button-text-color: #67c23a;
+    --button-bg-color: #1c2518;
+    --button-border-color: #3e6b27;
+    --button-hover-text-color: #ffffff;
+    --button-hover-bg-color: #67c23a;
+    --button-hover-border-color: #67c23a;
+}
+
+.theme-dark .callout-content.admonition-content button.is-info {
+    --button-text-color: #ffffff;
+    --button-bg-color: #909399;
+    --button-border-color: #909399;
+    --button-hover-text-color: #ffffff;
+    --button-hover-bg-color: #6b6d71;
+    --button-hover-border-color: #6b6d71;
+}
+
+.theme-dark .callout-content.admonition-content button.is-info.is-plain {
+    --button-text-color: #909399;
+    --button-bg-color: #202121;
+    --button-border-color: #525457;
+    --button-hover-text-color: #ffffff;
+    --button-hover-bg-color: #909399;
+    --button-hover-border-color: #909399;
+}
+
+.theme-dark .callout-content.admonition-content button.is-warning {
+    --button-text-color: #ffffff;
+    --button-bg-color: #e6a23c;
+    --button-border-color: #e6a23c;
+    --button-hover-text-color: #ffffff;
+    --button-hover-bg-color: #a77730;
+    --button-hover-border-color: #a77730;
+}
+
+.theme-dark .callout-content.admonition-content button.is-warning.is-plain {
+    --button-text-color: #e6a23c;
+    --button-bg-color: #292218;
+    --button-border-color: #7d5b28;
+    --button-hover-text-color: #ffffff;
+    --button-hover-bg-color: #e6a23c;
+    --button-hover-border-color: #e6a23c;
+}
+
+.theme-dark .callout-content.admonition-content button.is-danger {
+    --button-text-color: #ffffff;
+    --button-bg-color: #f56c6c;
+    --button-border-color: #f56c6c;
+    --button-hover-text-color: #ffffff;
+    --button-hover-bg-color: #b25252;
+    --button-hover-border-color: #b25252;
+}
+
+.theme-dark .callout-content.admonition-content button.is-danger.is-plain {
+    --button-text-color: #f56c6c;
+    --button-bg-color: #2b1d1d;
+    --button-border-color: #854040;
+    --button-hover-text-color: #ffffff;
+    --button-hover-bg-color: #f56c6c;
+    --button-hover-border-color: #f56c6c;
+}

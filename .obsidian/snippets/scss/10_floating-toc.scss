@@ -1,0 +1,10 @@
+/*========floating-toc===========*/
+div.markdown-source-view ul.floating-toc>li {
+    flex: none;
+    background-color: transparent;
+    border: 0px;
+}
+
+div.markdown-source-view ul.floating-toc {
+    flex-wrap: unset;
+}

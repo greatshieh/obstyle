@@ -1,0 +1,17 @@
+{
+  "showInlineTitle": false,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "2",
+    "downscalePercent": 100
+  },
+  "showFrontmatter": false,
+  "defaultViewMode": "preview",
+  "focusNewTab": false,
+  "readableLineLength": false,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "zzz-attachment",
+  "showLineNumber": false
+}

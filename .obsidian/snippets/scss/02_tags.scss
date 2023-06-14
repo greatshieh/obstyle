@@ -1,0 +1,257 @@
+/* 自定义标签 默认使用*/
+@use "sass:map";
+@use "./mixins/function" as *;
+
+$special-tags-color: () !default;
+$special-tags-color: map.deep-merge(
+    (
+        "tag": (
+            "text": #ffffff,
+        ),
+        "important": (
+            "bg": #33525c,
+            "border": #518292,
+        ),
+        "complete": (
+            "bg": #190e01,
+            "border": #311c02,
+        ),
+        "inprogress": (
+            "bg": #12130f,
+            "border": #23251e,
+        ),
+        "dailynote": (
+            "bg": #0f60bd,
+            "border": #98c8ff,
+        ),
+        "weeklynote": (
+            "bg": #3971b1,
+            "border": #d1e6ff,
+        ),
+        "ideas": (
+            "bg": #565656d8,
+            "border": #fcfcc0,
+        ),
+        "questions": (
+            "bg": #6640ae,
+            "border": #d4bdff,
+        ),
+    ),
+    $special-tags-color
+);
+
+$types: important, complete, inprogress, dailynote, weeklynote, ideas, questions;
+
+:root {
+    #{getCssVarName('tag', 'text', 'color')}: map.get($special-tags-color, "tag", "text");
+
+    @each $type in $types {
+        @each $attr in ("bg", "border") {
+            #{getCssVarName($type, $attr, 'color')}: map.get($special-tags-color, $type, $attr);
+        }
+    }
+}
+
+@mixin special-tag($type) {
+    background-color: getCssVar($type, "bg", "color") !important;
+    color: getCssVar("tag", "text", "color") !important;
+    border-color: getCssVar($type, "border", "color") !important;
+}
+
+.tag:not(.token) {
+    padding: 2px 4px;
+}
+
+// 特殊标签
+.tag:not(.token) {
+    @each $type in $types {
+        &[href^="\##{$type}"] {
+            @include special-tag($type);
+        }
+    }
+
+    &[href^="#重要"] {
+        @include special-tag("important");
+    }
+
+    &[href^="#完成"] {
+        @include special-tag("complete");
+    }
+
+    &[href^="#进行中"] {
+        @include special-tag("inprogress");
+    }
+}
+
+.cm-s-obsidian:not([class="markdown-source-view cm-s-obsidian mod-cm6"]) {
+    .cm-formatting.cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta.cm-tag,
+    span.cm-hashtag.cm-meta.cm-hashtag-end:not(.cm-formatting-hashtag).cm-tag {
+        @each $type in $types {
+            &-#{$type} {
+                @include special-tag($type);
+            }
+        }
+    }
+}
+
+/*rainbow tag*/
+$rainbow-tags-color: () !default;
+$rainbow-tags-color: map.deep-merge(
+    (
+        "text-color": (
+            "tag1": #409eff,
+            "tag2": #67c23a,
+            "tag3": #909399,
+            "tag4": #e6a23c,
+            "tag5": #f56c6c,
+        ),
+        "bg-color": (
+            "tag1": #18222c,
+            "tag2": #1c2518,
+            "tag3": #202121,
+            "tag4": #292218,
+            "tag5": #2b1d1d,
+        ),
+        "border-color": (
+            "tag1": #2a598a,
+            "tag2": #3e6b27,
+            "tag3": #525457,
+            "tag4": #7d5b28,
+            "tag5": #854040,
+        ),
+    ),
+    $rainbow-tags-color
+);
+
+:root {
+    @each $index in (1, 2, 3, 4, 5) {
+        @each $type in ("text", "bg", "border") {
+            #{getCssVarName('tag#{$index}', $type, "color")}: map.get(
+                $rainbow-tags-color,
+                "#{$type}-color",
+                "tag#{$index}"
+            );
+        }
+    }
+}
+
+@mixin rainbow-tag($index) {
+    background-color: getCssVar("tag#{$index}", "bg", "color");
+    color: getCssVar("tag#{$index}", "text", "color");
+    border-color: getCssVar("tag#{$index}", "border", "color");
+    transition: all 0.5s ease-in-out;
+    &:hover {
+        background-color: getCssVar("tag#{$index}", "text", "color");
+        color: getCssVar("tag", "text", "color");
+        border-color: getCssVar("tag#{$index}", "text", "color");
+    }
+}
+
+.tag:not(.token) {
+    @each $index in (1, 2, 3, 4, 5) {
+        &:nth-child(5n + #{$index}) {
+            @include rainbow-tag($index);
+        }
+    }
+}
+
+@each $index in (1, 2, 3, 4, 5) {
+    .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n + #{$index}) {
+        &,
+        & + span.cm-hashtag,
+        & + .cm-hashtag.cm-meta,
+        & + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-hashtag-end,
+        & + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*="cm-hashtag-end"]) + span.cm-hashtag.cm-meta,
+        & + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*="cm-hashtag-end"]) + span.cm-hashtag-end,
+        &
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*="cm-hashtag-end"])
+            + span.cm-hashtag.cm-meta
+            + span.cm-hashtag-end,
+        &
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*="cm-hashtag-end"])
+            + span.cm-hashtag.cm-meta
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error,
+        &
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*="cm-hashtag-end"])
+            + span.cm-hashtag.cm-meta
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*="cm-hashtag-end"])
+            + span.cm-hashtag.cm-meta,
+        &
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*="cm-hashtag-end"])
+            + span.cm-hashtag.cm-meta
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*="cm-hashtag-end"])
+            + span.cm-hashtag.cm-meta
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error,
+        &
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*="cm-hashtag-end"])
+            + span.cm-hashtag.cm-meta
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*="cm-hashtag-end"])
+            + span.cm-hashtag.cm-meta
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error
+            + span.cm-hashtag.cm-meta,
+        &
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*="cm-hashtag-end"])
+            + span.cm-hashtag.cm-meta
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*="cm-hashtag-end"])
+            + span.cm-hashtag.cm-meta
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error
+            + span.cm-hashtag.cm-meta
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error,
+        & + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error,
+        &
+            + span.cm-hashtag.cm-meta
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error
+            + span.cm-hashtag.cm-hashtag-end,
+        &
+            + span.cm-hashtag.cm-meta
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error
+            + span.cm-hashtag.cm-meta:not([class*="cm-hashtag-begin"]),
+        &
+            + span.cm-hashtag.cm-meta
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error
+            + span.cm-hashtag.cm-meta:not([class*="cm-hashtag-begin"])
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error,
+        &
+            + span.cm-hashtag.cm-meta
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error
+            + span.cm-hashtag.cm-meta:not([class*="cm-hashtag-begin"])
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error
+            + span.cm-hashtag.cm-meta:not([class*="cm-hashtag-begin"]),
+        &
+            + span.cm-hashtag.cm-meta
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error
+            + span.cm-hashtag.cm-meta:not([class*="cm-hashtag-begin"])
+            + span.cm-hashtag.cm-hashtag-end,
+        &
+            + span.cm-hashtag.cm-meta
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error
+            + span.cm-hashtag.cm-meta:not([class*="cm-hashtag-begin"])
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error
+            + span.cm-hashtag.cm-meta:not([class*="cm-hashtag-begin"])
+            + span.cm-hashtag.cm-hashtag-end,
+        &
+            + span.cm-hashtag.cm-meta
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error
+            + span.cm-hashtag.cm-meta:not([class*="cm-hashtag-begin"])
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error
+            + span.cm-hashtag.cm-meta:not([class*="cm-hashtag-begin"])
+            + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error {
+            @include rainbow-tag($index);
+        }
+    }
+}
+
+div[class="markdown-source-view cm-s-obsidian mod-cm6"] span {
+    &.cm-hashtag {
+        background-color: transparent !important;
+        color: var(--text-muted) !important;
+        text-decoration: underline;
+        padding: 0 !important;
+    }
+
+    &.cm-hashtag-begin,
+    &.cm-hashtag-end,
+    &.cm-hashtag-begin + .cm-hashtag.cm-meta {
+        padding: 0 !important;
+    }
+}

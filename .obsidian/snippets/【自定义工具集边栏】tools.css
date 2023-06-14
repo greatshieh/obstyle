@@ -1,0 +1,141 @@
+.workspace-tab-header[aria-label="常用工具"] .workspace-tab-header-inner-icon svg {
+    display: none;
+}
+
+.workspace-tab-header[aria-label="常用工具"] .workspace-tab-header-inner-icon::before {
+    content: " ";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: var(--icon-color);
+    opacity: var(--icon-opacity);
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg t="1684723605215" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="30647"><path d="M735.720727 72.704c19.176727 0 37.934545 2.746182 56.040728 8.192l-97.652364 97.652364a43.752727 43.752727 0 0 0 0 61.812363l68.468364 68.491637a43.52 43.52 0 0 0 61.719272 0.093091l23.342546-23.342546 74.426182-74.426182a193.117091 193.117091 0 0 1-48.570182 193.117091 192.861091 192.861091 0 0 1-137.262546 56.855273 195.141818 195.141818 0 0 1-92.602182-23.389091l-23.90109-12.939636-18.408728 19.991272L186.507636 895.557818c-6.516364 7.470545-15.732364 11.589818-25.972363 11.589818-10.728727 0-21.154909-4.514909-29.346909-12.706909l-22.621091-22.644363c-8.564364-8.564364-13.079273-19.456-12.706909-30.626909 0.325818-9.728 4.445091-18.501818 12.264727-25.344l450.024727-414.208 19.991273-18.408728-12.939636-23.901091c-40.634182-75.008-26.88-169.541818 33.466181-229.864727a192.605091 192.605091 0 0 1 137.053091-56.738909m0-34.909091a227.979636 227.979636 0 0 0-161.745454 66.978909c-73.448727 73.448727-86.528 184.273455-39.470546 271.173818L84.503273 790.155636c-30.766545 26.810182-31.837091 75.101091-0.605091 106.333091l22.597818 22.621091a76.404364 76.404364 0 0 0 54.039273 22.946909c19.595636 0 38.702545-7.959273 52.293818-23.552L627.037091 468.48a229.282909 229.282909 0 0 0 109.242182 27.601455 228.305455 228.305455 0 0 0 161.954909-67.072c68.212364-68.212364 84.247273-168.610909 48.477091-252.183273a20.200727 20.200727 0 0 0-18.757818-12.194909 20.596364 20.596364 0 0 0-14.638546 6.050909l-113.617454 113.617454a8.541091 8.541091 0 0 1-6.074182 2.536728 8.890182 8.890182 0 0 1-6.283637-2.629819L718.871273 215.738182a8.820364 8.820364 0 0 1 0-12.474182l113.454545-113.454545c10.123636-10.216727 7.098182-27.834182-6.144-33.489455a229.981091 229.981091 0 0 0-90.461091-18.525091z" p-id="30648"></path><path d="M365.870545 481.117091a17.314909 17.314909 0 0 1-12.334545-5.12l-84.922182-84.898909a4.770909 4.770909 0 0 0-3.118545-1.396364l-70.702546-3.514182a39.819636 39.819636 0 0 1-31.325091-18.036363L64.465455 215.342545a39.912727 39.912727 0 0 1 5.236363-49.640727l75.659637-75.659636a40.005818 40.005818 0 0 1 49.617454-5.259637l152.808727 99.002182c10.658909 6.912 17.408 18.618182 18.059637 31.301818l3.514182 70.702546a4.654545 4.654545 0 0 0 1.396363 3.118545l90.065455 90.065455a17.454545 17.454545 0 1 1-24.692364 24.692364l-90.065454-90.065455a39.493818 39.493818 0 0 1-11.566546-26.088727l-3.514182-70.679273a4.840727 4.840727 0 0 0-2.187636-3.770182L176.011636 114.106182a4.817455 4.817455 0 0 0-5.981091 0.628363L94.370909 190.394182a4.840727 4.840727 0 0 0-0.605091 5.981091l98.978909 152.785454c0.837818 1.28 2.257455 2.094545 3.793455 2.164364l70.656 3.514182c9.844364 0.488727 19.106909 4.584727 26.088727 11.566545l84.922182 84.898909a17.454545 17.454545 0 0 1-12.334546 29.812364zM766.999273 986.205091c-10.705455 0-21.410909-4.049455-29.556364-12.171636l-200.122182-200.145455c-7.889455-7.912727-12.241455-18.408727-12.241454-29.579636s4.352-21.666909 12.264727-29.556364l27.461818-27.485091-35.072-35.072a17.454545 17.454545 0 1 1 24.692364-24.692364L601.832727 674.909091a17.454545 17.454545 0 0 1 0 24.692364l-39.796363 39.819636a6.818909 6.818909 0 0 0 0 9.751273l200.098909 200.122181a6.935273 6.935273 0 0 0 9.751272 0l157.09091-157.090909a6.935273 6.935273 0 0 0-0.023273-9.774545l-200.098909-200.098909a6.935273 6.935273 0 0 0-9.751273 0l-39.819636 39.819636a17.454545 17.454545 0 0 1-24.692364 0l-56.994909-56.994909a17.454545 17.454545 0 1 1 24.692364-24.692364l44.660363 44.660364 27.485091-27.485091a41.890909 41.890909 0 0 1 59.089455-0.023273l200.145454 200.145455a41.890909 41.890909 0 0 1 0 59.112727l-157.090909 157.090909a41.681455 41.681455 0 0 1-29.579636 12.241455z" p-id="30649"></path></svg>');
+}
+
+.workspace-tab-header[aria-label="常用工具"].is-active .workspace-tab-header-inner-icon::before {
+    background-color: var(--icon-color-focused);
+    opacity: var(--icon-opacity-active);
+}
+
+.workspace-tab-header[aria-label="常用工具"] .workspace-tab-header-inner-icon .workspace-tab-header-status-container {
+    display: none;
+}
+
+/* 隐藏目录 */
+.workspace-split:not(.mod-root) .floating-toc-div {
+    display: none;
+}
+
+/* 样式调整 */
+.workspace-split:not(.mod-root) .markdown-reading-view .markdown-preview-view:not(.is-readable-line-width)>.markdown-preview-sizer {
+    padding-left: 0px;
+}
+
+.workspace-split:not(.mod-root) .markdown-reading-view .callout {
+    box-shadow: none;
+}
+
+
+/*预览模式减少文档左右上下的空白*/
+.workspace-split:not(.mod-root) .markdown-preview-view.tools {
+    padding: 0px 0px 0px 0px !important;
+}
+
+.workspace-split:not(.mod-root) .markdown-preview-view.tools .markdown-preview-sizer {
+    max-width: 100%;
+}
+
+.workspace-split:not(.mod-root) .markdown-preview-view.tools .markdown-preview-sizer .callout.admonition {
+    /* padding: 6px; */
+    margin: 0px;
+    background-color: transparent;
+}
+
+.workspace-split:not(.mod-root) .markdown-preview-view.tools .markdown-preview-sizer .callout.admonition .callout-title.admonition-title {
+    font-size: 14px;
+    padding: 6px;
+    background-color: var(--bg3);
+}
+
+.workspace-split:not(.mod-root) .markdown-preview-view.tools .markdown-preview-sizer .callout.admonition .callout-title.admonition-title .callout-fold {
+    margin-left: auto;
+}
+
+.workspace-split:not(.mod-root) .markdown-preview-view.tools .markdown-preview-sizer .callout.admonition .callout-content.admonition-content p {
+    display: grid;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, 115px);
+    gap: 15px 0px;
+}
+
+.workspace-split:not(.mod-root) .markdown-preview-view.tools .markdown-preview-sizer .admonition-parent+.admonition-parent {
+    margin-top: 6px;
+}
+
+.tools .callout-content.admonition-content button {
+    height: 32px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.6s ease;
+    font-weight: 500;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    padding: 8px 15px;
+    font-size: 12px;
+    border-radius: 4px;
+    color: var(--button-text-color);
+    background-color: var(--button-bg-color);
+    border-color: var(--button-border-color);
+}
+
+.tools .callout-content button>svg {
+    fill: var(--button-text-color);
+}
+
+.tools .callout-content button:hover {
+    color: var(--button-hover-text-color);
+    background-color: var(--button-hover-bg-color);
+    border-color: var(--button-hover-border-color);
+}
+
+.tools .callout-content button:hover>svg {
+    fill: var(--button-hover-text-color);
+}
+
+.tools .callout-content button.is-round {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tools .callout-content button.is-circle {
+    border-radius: 50%;
+}
+
+.tools .callout-content button.circle-btn {
+    box-shadow: none;
+    font-size: 12px;
+    word-break: keep-all;
+    margin: 4px;
+    padding: 0px;
+    height: 50px;
+    /* border-radius:50%; */
+    position: relative;
+    border: 0;
+    display: inline-grid;
+    text-align: center;
+    justify-items: center;
+}
+
+.tools .callout-content button.blank {
+    box-shadow: none;
+    background: #fff0f000;
+    padding: 0;
+}
+
+.tools .callout-content button.blank:hover {
+    animation: swing_image 0.8s linear 0s 1 normal;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+}

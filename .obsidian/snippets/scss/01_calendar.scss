@@ -1,0 +1,22 @@
+/** calendar **/
+#calendar-container .calendar {
+    .week-num.svelte-egt0yd {
+        vertical-align: middle;
+        .dot-container {
+            display: none;
+        }
+    }
+    .day {
+        padding: 4px !important;
+
+        &.today {
+            border-radius: 3px;
+            border: solid 1px;
+            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.12);
+        }
+
+        .dot-container {
+            display: none;
+        }
+    }
+}

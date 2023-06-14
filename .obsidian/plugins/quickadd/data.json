@@ -1,0 +1,103 @@
+{
+  "choices": [
+    {
+      "id": "5e68a398-e7e5-4705-8743-442955401d8a",
+      "name": "微信读书",
+      "type": "Macro",
+      "command": true,
+      "macroId": "8fa42d58-4288-4880-8cac-ae788b21f3fc"
+    },
+    {
+      "id": "6dfe5b24-25d6-4df8-9fa6-8fe130dbc2d9",
+      "name": "切换视图",
+      "type": "Macro",
+      "command": true,
+      "macroId": "01728fdd-4159-4474-945e-ac969f193959"
+    }
+  ],
+  "macros": [
+    {
+      "name": "微信读书",
+      "id": "8fa42d58-4288-4880-8cac-ae788b21f3fc",
+      "commands": [
+        {
+          "name": "bookfromweread",
+          "type": "UserScript",
+          "id": "6863c8fa-0fdb-4ae1-96a5-6174d3d079cd",
+          "path": "zzz-template/script/bookfromweread.js",
+          "settings": {}
+        },
+        {
+          "name": "微信读书笔记",
+          "type": "NestedChoice",
+          "id": "11506854-7965-4a86-aa51-73938e4c992f",
+          "choice": {
+            "id": "de839fbf-b3a7-4642-bf30-d82bbbba50e4",
+            "name": "微信读书笔记",
+            "type": "Template",
+            "command": false,
+            "templatePath": "zzz-template/tp/tp-读书笔记.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{VALUE:filename}}"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "001-图书馆"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "preview",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": true
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "切换视图",
+      "id": "01728fdd-4159-4474-945e-ac969f193959",
+      "commands": [
+        {
+          "name": "SwitchViews",
+          "type": "UserScript",
+          "id": "7b87e6b1-facd-4509-8a03-55185752b5d3",
+          "path": "zzz-template/script/SwitchViews.js",
+          "settings": {}
+        }
+      ],
+      "runOnStartup": false
+    }
+  ],
+  "inputPrompt": "multi-line",
+  "devMode": false,
+  "templateFolderPath": "zzz-template/tp",
+  "announceUpdates": true,
+  "version": "1.0.2",
+  "disableOnlineFeatures": true,
+  "ai": {
+    "OpenAIApiKey": "",
+    "defaultModel": "Ask me",
+    "defaultSystemPrompt": "As an AI assistant within Obsidian, your primary goal is to help users manage their ideas and knowledge more effectively. Format your responses using Markdown syntax. Please use the [[Obsidian]] link format. You can write aliases for the links by writing [[Obsidian|the alias after the pipe symbol]]. To use mathematical notation, use LaTeX syntax. LaTeX syntax for larger equations should be on separate lines, surrounded with double dollar signs ($$). You can also inline math expressions by wrapping it in $ symbols. For example, use $$w_{ij}^{\text{new}}:=w_{ij}^{\text{current}}+etacdotdelta_jcdot x_{ij}$$ on a separate line, but you can write \"($eta$ = learning rate, $delta_j$ = error term, $x_{ij}$ = input)\" inline.",
+    "promptTemplatesFolderPath": "",
+    "showAssistant": true
+  },
+  "migrations": {
+    "migrateToMacroIDFromEmbeddedMacro": true,
+    "useQuickAddTemplateFolder": true,
+    "incrementFileNameSettingMoveToDefaultBehavior": true,
+    "mutualExclusionInsertAfterAndWriteToBottomOfFile": true,
+    "setVersionAfterUpdateModalRelease": true
+  }
+}

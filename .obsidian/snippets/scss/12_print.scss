@@ -1,0 +1,25 @@
+$--text-normal: #303133;
+
+@media print {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        page-break-after: avoid;
+        color: #303133 !important;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    code:not([class*="language"]) {
+        background-color: #f5f7fa;
+    }
+
+    .external-link::before{
+        display: none;
+    }
+}

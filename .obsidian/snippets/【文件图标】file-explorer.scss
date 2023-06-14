@@ -1,0 +1,194 @@
+/* file-explorer 自定义 */
+@use "sass:map";
+@use "./scss/mixins/function" as *;
+
+$icons: () !default;
+$icons: map.deep-merge(
+    (
+        "folder": (
+            "default":
+                "%3Csvg t='1686032605493' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='8688' width='18' height='18'%3E%3Cpath d='M928 444H820V330.4c0-17.7-14.3-32-32-32H473L355.7 186.2c-1.5-1.4-3.5-2.2-5.5-2.2H96c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h698c13 0 24.8-7.9 29.7-20l134-332c1.5-3.8 2.3-7.9 2.3-12 0-17.7-14.3-32-32-32z m-180 0H238c-13 0-24.8 7.9-29.7 20L136 643.2V256h188.5l119.6 114.4H748V444z' p-id='8689' fill='currentColor'%3E%3C/path%3E%3C/svg%3E",
+
+            "collapsed":
+                "%3Csvg t='1686032571841' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='8510' width='18' height='18'%3E%3Cpath d='M880 298.4H521L403.7 186.2c-1.5-1.4-3.5-2.2-5.5-2.2H144c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V330.4c0-17.7-14.3-32-32-32z' p-id='8511' fill='currentColor'%3E%3C/path%3E%3C/svg%3E",
+        ),
+        "attachment": (
+            "default":
+                "%3Csvg t='1686710917241' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='15434' width='16' height='16'%3E%3Cpath d='M938.666667 192H569.6c-23.466667 0-44.8-12.8-55.466667-32l-49.066666-85.333333c-10.666667-19.2-32-32-53.333334-32H85.333333C49.066667 42.666667 21.333333 70.4 21.333333 106.666667v810.666666c0 36.266667 27.733333 64 64 64h853.333334c36.266667 0 64-27.733333 64-64V256c0-36.266667-27.733333-64-64-64z m21.333333 725.333333c0 12.8-8.533333 21.333333-21.333333 21.333334H85.333333c-12.8 0-21.333333-8.533333-21.333333-21.333334V106.666667c0-12.8 8.533333-21.333333 21.333333-21.333334h326.4c8.533333 0 14.933333 4.266667 19.2 10.666667l49.066667 85.333333C497.066667 213.333333 533.333333 234.666667 569.6 234.666667H938.666667c12.8 0 21.333333 8.533333 21.333333 21.333333v661.333333z' fill='%23666767' p-id='15435'%3E%3C/path%3E%3Cpath d='M789.333333 490.666667H234.666667c-12.8 0-21.333333 8.533333-21.333334 21.333333s8.533333 21.333333 21.333334 21.333333h554.666666c12.8 0 21.333333-8.533333 21.333334-21.333333s-8.533333-21.333333-21.333334-21.333333z' fill='currentColor' p-id='15436'%3E%3C/path%3E%3C/svg%3E",
+            "collapsed":
+                "%3Csvg t='1686710857946' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='13613' width='16' height='16'%3E%3Cpath d='M938.666667 192H569.6c-23.466667 0-44.8-4.266667-55.466667-25.6l-49.066666-87.466667c-10.666667-21.333333-32-36.266667-55.466667-36.266666H85.333333C49.066667 42.666667 21.333333 70.4 21.333333 106.666667v810.666666c0 36.266667 27.733333 64 64 64h853.333334c36.266667 0 64-27.733333 64-64V256c0-34.133333-29.866667-64-64-64z m-149.333334 341.333333H234.666667c-12.8 0-21.333333-8.533333-21.333334-21.333333s8.533333-21.333333 21.333334-21.333333h554.666666c12.8 0 21.333333 8.533333 21.333334 21.333333s-10.666667 21.333333-21.333334 21.333333z' fill='currentColor' p-id='13614'%3E%3C/path%3E%3C/svg%3E",
+        ),
+        "template": (
+            "collapsed":
+                "%3Csvg t='1686697045075' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='2499' width='18' height='18'%3E%3Cpath d='M243.2 290.816v562.322286h495.689143V926.47619H279.478857C219.37981 926.47619 170.666667 877.226667 170.666667 816.469333v-525.653333h72.533333zM780.190476 97.52381a73.142857 73.142857 0 0 1 73.142857 73.142857v560.761904a73.142857 73.142857 0 0 1-73.142857 73.142858H292.571429V170.666667a73.142857 73.142857 0 0 1 73.142857-73.142857h414.47619z m-121.904762 146.285714h-219.428571v73.142857h219.428571v-73.142857z' p-id='2500' fill='currentColor'%3E%3C/path%3E%3C/svg%3E",
+            "default":
+                "%3Csvg t='1686696969541' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='2315' width='18' height='18'%3E%3Cpath d='M243.2 290.816v562.322286h495.689143V926.47619H279.478857C219.37981 926.47619 170.666667 877.226667 170.666667 816.469333v-525.653333h72.533333zM780.190476 97.52381a73.142857 73.142857 0 0 1 73.142857 73.142857v560.761904a73.142857 73.142857 0 0 1-73.142857 73.142858H292.571429V170.666667a73.142857 73.142857 0 0 1 73.142857-73.142857h414.47619z m0 73.142857H365.714286v560.761904h414.47619V170.666667z m-125.927619 71.265523v73.362286H436.662857V241.93219h217.624381z' p-id='2316' fill='currentColor'%3E%3C/path%3E%3C/svg%3E",
+        ),
+        "tips": (
+            "default":
+                "%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-bulb' width='20' height='20' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7' /%3E%3Cpath d='M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3' /%3E%3Cpath d='M9.7 17l4.6 0' /%3E%3C/svg%3E",
+            "collapsed":
+                "%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-bulb-filled' width='18' height='18' viewBox='0 0 24 24' stroke-width='1.5' stroke='none' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M4 11a1 1 0 0 1 .117 1.993l-.117 .007h-1a1 1 0 0 1 -.117 -1.993l.117 -.007h1z' stroke-width='0' fill='currentColor' /%3E%3Cpath d='M12 2a1 1 0 0 1 .993 .883l.007 .117v1a1 1 0 0 1 -1.993 .117l-.007 -.117v-1a1 1 0 0 1 1 -1z' stroke-width='0' fill='currentColor' /%3E%3Cpath d='M21 11a1 1 0 0 1 .117 1.993l-.117 .007h-1a1 1 0 0 1 -.117 -1.993l.117 -.007h1z' stroke-width='0' fill='currentColor' /%3E%3Cpath d='M4.893 4.893a1 1 0 0 1 1.32 -.083l.094 .083l.7 .7a1 1 0 0 1 -1.32 1.497l-.094 -.083l-.7 -.7a1 1 0 0 1 0 -1.414z' stroke-width='0' fill='currentColor' /%3E%3Cpath d='M17.693 4.893a1 1 0 0 1 1.497 1.32l-.083 .094l-.7 .7a1 1 0 0 1 -1.497 -1.32l.083 -.094l.7 -.7z' stroke-width='0' fill='currentColor' /%3E%3Cpath d='M14 18a1 1 0 0 1 1 1a3 3 0 0 1 -6 0a1 1 0 0 1 .883 -.993l.117 -.007h4z' stroke-width='0' fill='currentColor' /%3E%3Cpath d='M12 6a6 6 0 0 1 3.6 10.8a1 1 0 0 1 -.471 .192l-.129 .008h-6a1 1 0 0 1 -.6 -.2a6 6 0 0 1 3.6 -10.8z' stroke-width='0' fill='currentColor' /%3E%3C/svg%3E",
+        ),
+        "library": (
+            "default":
+                "%3Csvg t='1686706965772' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='3270' width='18' height='18'%3E%3Cpath d='M742.4 921.6h-512a25.6 25.6 0 0 1 0-51.2h512a25.6 25.6 0 0 1 0 51.2z' fill='currentColor' p-id='3271'%3E%3C/path%3E%3Cpath d='M844.8 153.6a25.6 25.6 0 0 0-25.6 25.6v768a25.6 25.6 0 0 1-25.6 25.6h-563.2c-42.3424 0-76.8-34.4576-76.8-76.8S188.0576 819.2 230.4 819.2h460.8c42.3424 0 76.8-34.4576 76.8-76.8v-614.4c0-42.3424-34.4576-76.8-76.8-76.8h-512C136.8576 51.2 102.4 85.6576 102.4 128v768C102.4 966.5536 159.8464 1024 230.4 1024h563.2c42.3424 0 76.8-34.4576 76.8-76.8v-768a25.6 25.6 0 0 0-25.6-25.6z m-665.6-51.2h512a25.6 25.6 0 0 1 25.6 25.6v614.4a25.6 25.6 0 0 1-25.6 25.6h-460.8c-28.7744 0-55.3984 9.5744-76.8 25.6512V128a25.6 25.6 0 0 1 25.6-25.6z' fill='currentColor' p-id='3272'%3E%3C/path%3E%3C/svg%3E",
+            "collapsed":
+                "%3Csvg t='1686706858627' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='2074' width='18' height='18'%3E%3Cpath d='M794.069333 166.272V836.053333a21.333333 21.333333 0 0 1-21.333333 21.333334H315.264a85.333333 85.333333 0 0 1-85.333333-85.333334v-32.490666a85.333333 85.333333 0 0 1 85.333333-85.333334h376.874667a21.333333 21.333333 0 0 0 21.333333-21.333333V149.333333a64 64 0 0 0-64-64H298.666667a149.333333 149.333333 0 0 0-149.333334 149.333334v554.666666a149.333333 149.333333 0 0 0 149.333334 149.333334h533.333333a42.666667 42.666667 0 0 0 42.666667-42.666667V166.272a40.298667 40.298667 0 0 0-80.597334 0z m-120.874666 548.906667h-341.333334c-20.16 0-40.32 16.256-40.32 40.64 0 24.362667 20.16 40.618667 40.32 40.618666h341.333334c20.138667 0 40.277333-20.309333 40.277333-40.618666 0-20.330667-20.138667-40.64-40.277333-40.64z' fill='currentColor' p-id='2075'%3E%3C/path%3E%3C/svg%3E",
+        ),
+        "markdown": (
+            "default":
+                "%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-markdown' width='18' height='18' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z' /%3E%3Cpath d='M7 15v-6l2 2l2 -2v6' /%3E%3Cpath d='M14 13l2 2l2 -2m-2 2v-6' /%3E%3C/svg%3E",
+        ),
+        "image": (
+            "default":
+                "%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-photo' width='18' height='18' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M15 8h.01' /%3E%3Cpath d='M3 6a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3v-12z' /%3E%3Cpath d='M3 16l5 -5c.928 -.893 2.072 -.893 3 0l5 5' /%3E%3Cpath d='M14 14l1 -1c.928 -.893 2.072 -.893 3 0l3 3' /%3E%3C/svg%3E",
+        ),
+        "pdf": (
+            "default":
+                "%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-pdf' width='18' height='18' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M10 8v8h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-2z' /%3E%3Cpath d='M3 12h2a2 2 0 1 0 0 -4h-2v8' /%3E%3Cpath d='M17 12h3' /%3E%3Cpath d='M21 8h-4v8' /%3E%3C/svg%3E",
+        ),
+    ),
+    $icons
+);
+
+$folders: "folder", "library", "tips", "attachment", "template";
+
+$files: () !default;
+$files: map.deep-merge(
+    (
+        "markdown": (
+            "md",
+        ),
+        "image": (
+            "jpg",
+            "png",
+            "gif",
+            "svg",
+            "jpeg",
+            "bmp",
+        ),
+        "pdf": "pdf",
+        "video": "mkv",
+    ),
+    $files
+);
+
+:root {
+    @each $folder, $attrs in $icons {
+        @each $status, $svg in $attrs {
+            #{getCssVarName($status, $folder, 'icon')}: url("data:image/svg+xml,#{$svg}");
+        }
+    }
+}
+
+.workspace-leaf-content[data-type="file-explorer"] {
+    .tree-item-self.nav-folder-title[data-path="/"] {
+        /* 隐藏 vault name */
+        display: none;
+    }
+
+    .nav-folder-title {
+        align-items: center;
+
+        &:hover {
+            .tree-item-icon.collapse-icon.nav-folder-collapse-indicator {
+                background-color: var(--nav-item-color-hover);
+            }
+        }
+
+        &.has-folder-note {.tree-item-icon.collapse-icon.nav-folder-collapse-indicator {
+            background-color: rgb(202, 204, 194) !important;
+        }}
+
+        .tree-item-icon.collapse-icon.nav-folder-collapse-indicator {
+            background-color: var(--nav-item-color);
+            transition: transform 100ms ease-in-out;
+
+            & > svg {
+                /* 移除箭头 */
+                display: none;
+            }
+        }
+
+        .nav-folder-title-conten {
+            margin-left: 4px;
+        }
+    }
+
+    .nav-file-title {
+        .nav-file-title-content {
+            margin-left: -20px;
+
+            &::before {
+                content: " ";
+                display: inline-block;
+                vertical-align: middle;
+                width: 20px;
+                height: 20px;
+                background-color: var(--nav-item-color);
+            }
+        }
+
+        &:hover {
+            .nav-file-title-content::before {
+                background-color: var(--nav-item-color-hover);
+            }
+        }
+
+        &.is-active .nav-file-title-content:before {
+            background-color: var(--nav-item-color-active);
+        }
+    }
+}
+
+@mixin folder-style($folder) {
+    .tree-item-icon.collapse-icon.nav-folder-collapse-indicator {
+        -webkit-mask: getCssVar("default", $folder, "icon") no-repeat;
+        -webkit-mask-size: cover;
+        @if map.get($icons, $folder, "collapsed") {
+            &.is-collapsed {
+                /* 文件夹折叠时 */
+                -webkit-mask: getCssVar("collapsed", $folder, "icon") no-repeat;
+                -webkit-mask-size: cover;
+            }
+        }
+    }
+}
+
+@mixin file-style($file) {
+    .nav-file-title-content::before {
+        -webkit-mask: getCssVar("default", $file, "icon") no-repeat;
+    }
+}
+
+.workspace-leaf-content[data-type="file-explorer"] {
+    .nav-folder-title {
+        @each $folder in $folders {
+            @if $folder == "folder" {
+                @include folder-style($folder);
+            } @else {
+                &[data-path$="#{$folder}"] {
+                    @include folder-style($folder);
+                }
+            }
+        }
+    }
+
+    .nav-file-title {
+        @each $file, $types in $files {
+            @each $type in $types {
+                &[data-path$=".#{$type}"] {
+                    .nav-file-title-content::before {
+                        -webkit-mask: getCssVar("default", $file, "icon") no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tooltip.mod-right {
+    display: block !important;
+    background-color: #4090ff;
+}

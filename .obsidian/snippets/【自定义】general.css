@@ -1,0 +1,2670 @@
+@charset "UTF-8";
+body .nav-files-container {
+  --text-normal: #ece7e2;
+}
+
+.theme-light {
+  --p-kanban-bg-color: #d3d3d32d;
+  --p-kanban-border-color: #a0a0a060;
+  --p-kanban-card-color-1: #ffffff80;
+  --p-kanban-card-color-2: #ffffff;
+  --p-kanban-color-6: #f18e8e65;
+  --p-kanban-color-5: #eeb36f65;
+  --p-kanban-color-4: #d1d77f65;
+  --p-kanban-color-3: #8ce38465;
+  --p-kanban-color-2: #7cdddd65;
+  --p-kanban-color-1: #52aaf365;
+  --p-kanban-color-8: #ba8be165;
+  --p-kanban-color-7: #e677e065;
+  --p-kanban-color-simple: #cdcdcd2c;
+  --p-kanban-color-shadow: #cfcfcf4d;
+}
+
+.theme-dark {
+  --p-kanban-bg-color: #6c6c6c42;
+  --p-kanban-border-color: transparent;
+  --p-kanban-card-color-1: #0000003f;
+  --p-kanban-card-color-2: #41414136;
+  --p-kanban-color-6: #f3424252;
+  --p-kanban-color-5: #eb973752;
+  --p-kanban-color-4: #d2dd3852;
+  --p-kanban-color-3: #38ce2a52;
+  --p-kanban-color-2: #2ec4c452;
+  --p-kanban-color-1: #3496e652;
+  --p-kanban-color-8: #b962ff52;
+  --p-kanban-color-7: #e45bdd52;
+  --p-kanban-color-simple: #8e8e8e41;
+  --p-kanban-color-shadow: #0000004d;
+}
+
+.theme-light .callout-content.admonition-content button {
+  --button-text-color: #606266;
+  --button-bg-color: #ffffff;
+  --button-border-color: #dcdfe6;
+  --button-hover-text-color: #409eff;
+  --button-hover-bg-color: #ecf5ff;
+  --button-hover-border-color: #c6e2ff;
+}
+
+.theme-light .callout-content.admonition-content button.is-plain {
+  --button-text-color: #606266;
+  --button-bg-color: #ffffff;
+  --button-border-color: #dcdfe6;
+  --button-hover-text-color: #409eff;
+  --button-hover-bg-color: #ffffff;
+  --button-hover-border-color: #409eff;
+}
+
+.theme-light .callout-content.admonition-content button.is-primary {
+  --button-text-color: #ffffff;
+  --button-bg-color: #409eff;
+  --button-border-color: #409eff;
+  --button-hover-text-color: #ffffff;
+  --button-hover-bg-color: #79bbff;
+  --button-hover-border-color: #79bbff;
+}
+
+.theme-light .callout-content.admonition-content button.is-primary.is-plain {
+  --button-text-color: #409eff;
+  --button-bg-color: #ecf5ff;
+  --button-border-color: #a0cfff;
+  --button-hover-text-color: #ffffff;
+  --button-hover-bg-color: #409eff;
+  --button-hover-border-color: #409eff;
+}
+
+.theme-light .callout-content.admonition-content button.is-success {
+  --button-text-color: #ffffff;
+  --button-bg-color: #67c23a;
+  --button-border-color: #67c23a;
+  --button-hover-text-color: #ffffff;
+  --button-hover-bg-color: #95d475;
+  --button-hover-border-color: #95d475;
+}
+
+.theme-light .callout-content.admonition-content button.is-success.is-plain {
+  --button-text-color: #67c23a;
+  --button-bg-color: #f0f9eb;
+  --button-border-color: #b3e19d;
+  --button-hover-text-color: #ffffff;
+  --button-hover-bg-color: #67c23a;
+  --button-hover-border-color: #67c23a;
+}
+
+.theme-light .callout-content.admonition-content button.is-info {
+  --button-text-color: #ffffff;
+  --button-bg-color: #909399;
+  --button-border-color: #909399;
+  --button-hover-text-color: #ffffff;
+  --button-hover-bg-color: #b1b3b8;
+  --button-hover-border-color: #b1b3b8;
+}
+
+.theme-light .callout-content.admonition-content button.is-info.is-plain {
+  --button-text-color: #909399;
+  --button-bg-color: #f4f4f5;
+  --button-border-color: #c8c9cc;
+  --button-hover-text-color: #ffffff;
+  --button-hover-bg-color: #909399;
+  --button-hover-border-color: #909399;
+}
+
+.theme-light .callout-content.admonition-content button.is-warning {
+  --button-text-color: #ffffff;
+  --button-bg-color: #e6a23c;
+  --button-border-color: #e6a23c;
+  --button-hover-text-color: #ffffff;
+  --button-hover-bg-color: #eebe77;
+  --button-hover-border-color: #eebe77;
+}
+
+.theme-light .callout-content.admonition-content button.is-warning.is-plain {
+  --button-text-color: #e6a23c;
+  --button-bg-color: #fdf6ec;
+  --button-border-color: #f3d19e;
+  --button-hover-text-color: #ffffff;
+  --button-hover-bg-color: #e6a23c;
+  --button-hover-border-color: #e6a23c;
+}
+
+.theme-light .callout-content.admonition-content button.is-danger {
+  --button-text-color: #ffffff;
+  --button-bg-color: #f56c6c;
+  --button-border-color: #f56c6c;
+  --button-hover-text-color: #ffffff;
+  --button-hover-bg-color: #f89898;
+  --button-hover-border-color: #f89898;
+}
+
+.theme-light .callout-content.admonition-content button.is-danger.is-plain {
+  --button-text-color: #f56c6c;
+  --button-bg-color: #fef0f0;
+  --button-border-color: #fab6b6;
+  --button-hover-text-color: #ffffff;
+  --button-hover-bg-color: #f56c6c;
+  --button-hover-border-color: #f56c6c;
+}
+
+.theme-dark .callout-content.admonition-content button {
+  --button-text-color: #cfd3dc;
+  --button-bg-color: transparent;
+  --button-border-color: #4c4d4f;
+  --button-hover-text-color: #409eff;
+  --button-hover-bg-color: #18222c;
+  --button-hover-border-color: #213d5b;
+}
+
+.theme-dark .callout-content.admonition-content button.is-plain {
+  --button-text-color: #cfd3dc;
+  --button-bg-color: transparent;
+  --button-border-color: #4c4d4f;
+  --button-hover-text-color: #409eff;
+  --button-hover-bg-color: transparent;
+  --button-hover-border-color: #409eff;
+}
+
+.theme-dark .callout-content.admonition-content button.is-primary {
+  --button-text-color: #ffffff;
+  --button-bg-color: #409eff;
+  --button-border-color: #409eff;
+  --button-hover-text-color: #ffffff;
+  --button-hover-bg-color: #3375b9;
+  --button-hover-border-color: #3375b9;
+}
+
+.theme-dark .callout-content.admonition-content button.is-primary.is-plain {
+  --button-text-color: #1890ff;
+  --button-bg-color: #18222c;
+  --button-border-color: #2a598a;
+  --button-hover-text-color: #ffffff;
+  --button-hover-bg-color: #1890ff;
+  --button-hover-border-color: #1890ff;
+}
+
+.theme-dark .callout-content.admonition-content button.is-success {
+  --button-text-color: #ffffff;
+  --button-bg-color: #67c23a;
+  --button-border-color: #67c23a;
+  --button-hover-text-color: #ffffff;
+  --button-hover-bg-color: #4e8e2f;
+  --button-hover-border-color: #4e8e2f;
+}
+
+.theme-dark .callout-content.admonition-content button.is-success.is-plain {
+  --button-text-color: #67c23a;
+  --button-bg-color: #1c2518;
+  --button-border-color: #3e6b27;
+  --button-hover-text-color: #ffffff;
+  --button-hover-bg-color: #67c23a;
+  --button-hover-border-color: #67c23a;
+}
+
+.theme-dark .callout-content.admonition-content button.is-info {
+  --button-text-color: #ffffff;
+  --button-bg-color: #909399;
+  --button-border-color: #909399;
+  --button-hover-text-color: #ffffff;
+  --button-hover-bg-color: #6b6d71;
+  --button-hover-border-color: #6b6d71;
+}
+
+.theme-dark .callout-content.admonition-content button.is-info.is-plain {
+  --button-text-color: #909399;
+  --button-bg-color: #202121;
+  --button-border-color: #525457;
+  --button-hover-text-color: #ffffff;
+  --button-hover-bg-color: #909399;
+  --button-hover-border-color: #909399;
+}
+
+.theme-dark .callout-content.admonition-content button.is-warning {
+  --button-text-color: #ffffff;
+  --button-bg-color: #e6a23c;
+  --button-border-color: #e6a23c;
+  --button-hover-text-color: #ffffff;
+  --button-hover-bg-color: #a77730;
+  --button-hover-border-color: #a77730;
+}
+
+.theme-dark .callout-content.admonition-content button.is-warning.is-plain {
+  --button-text-color: #e6a23c;
+  --button-bg-color: #292218;
+  --button-border-color: #7d5b28;
+  --button-hover-text-color: #ffffff;
+  --button-hover-bg-color: #e6a23c;
+  --button-hover-border-color: #e6a23c;
+}
+
+.theme-dark .callout-content.admonition-content button.is-danger {
+  --button-text-color: #ffffff;
+  --button-bg-color: #f56c6c;
+  --button-border-color: #f56c6c;
+  --button-hover-text-color: #ffffff;
+  --button-hover-bg-color: #b25252;
+  --button-hover-border-color: #b25252;
+}
+
+.theme-dark .callout-content.admonition-content button.is-danger.is-plain {
+  --button-text-color: #f56c6c;
+  --button-bg-color: #2b1d1d;
+  --button-border-color: #854040;
+  --button-hover-text-color: #ffffff;
+  --button-hover-bg-color: #f56c6c;
+  --button-hover-border-color: #f56c6c;
+}
+
+/** calendar **/
+#calendar-container .calendar .week-num.svelte-egt0yd {
+  vertical-align: middle;
+}
+#calendar-container .calendar .week-num.svelte-egt0yd .dot-container {
+  display: none;
+}
+#calendar-container .calendar .day {
+  padding: 4px !important;
+}
+#calendar-container .calendar .day.today {
+  border-radius: 3px;
+  border: solid 1px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.12);
+}
+#calendar-container .calendar .day .dot-container {
+  display: none;
+}
+
+/* 参考 Element Plus  https://github.com/element-plus/element-plus */ /* 自定义标签 默认使用*/
+:root {
+  --tag-text-color: #ffffff;
+  --important-bg-color: #33525c;
+  --important-border-color: #518292;
+  --complete-bg-color: #190e01;
+  --complete-border-color: #311c02;
+  --inprogress-bg-color: #12130f;
+  --inprogress-border-color: #23251e;
+  --dailynote-bg-color: #0f60bd;
+  --dailynote-border-color: #98c8ff;
+  --weeklynote-bg-color: #3971b1;
+  --weeklynote-border-color: #d1e6ff;
+  --ideas-bg-color: rgba(86, 86, 86, 0.8470588235);
+  --ideas-border-color: #fcfcc0;
+  --questions-bg-color: #6640ae;
+  --questions-border-color: #d4bdff;
+}
+
+.tag:not(.token) {
+  padding: 2px 4px;
+}
+
+.tag:not(.token)[href^="#important"] {
+  background-color: var(--important-bg-color) !important;
+  color: var(--tag-text-color) !important;
+  border-color: var(--important-border-color) !important;
+}
+.tag:not(.token)[href^="#complete"] {
+  background-color: var(--complete-bg-color) !important;
+  color: var(--tag-text-color) !important;
+  border-color: var(--complete-border-color) !important;
+}
+.tag:not(.token)[href^="#inprogress"] {
+  background-color: var(--inprogress-bg-color) !important;
+  color: var(--tag-text-color) !important;
+  border-color: var(--inprogress-border-color) !important;
+}
+.tag:not(.token)[href^="#dailynote"] {
+  background-color: var(--dailynote-bg-color) !important;
+  color: var(--tag-text-color) !important;
+  border-color: var(--dailynote-border-color) !important;
+}
+.tag:not(.token)[href^="#weeklynote"] {
+  background-color: var(--weeklynote-bg-color) !important;
+  color: var(--tag-text-color) !important;
+  border-color: var(--weeklynote-border-color) !important;
+}
+.tag:not(.token)[href^="#ideas"] {
+  background-color: var(--ideas-bg-color) !important;
+  color: var(--tag-text-color) !important;
+  border-color: var(--ideas-border-color) !important;
+}
+.tag:not(.token)[href^="#questions"] {
+  background-color: var(--questions-bg-color) !important;
+  color: var(--tag-text-color) !important;
+  border-color: var(--questions-border-color) !important;
+}
+.tag:not(.token)[href^="#重要"] {
+  background-color: var(--important-bg-color) !important;
+  color: var(--tag-text-color) !important;
+  border-color: var(--important-border-color) !important;
+}
+.tag:not(.token)[href^="#完成"] {
+  background-color: var(--complete-bg-color) !important;
+  color: var(--tag-text-color) !important;
+  border-color: var(--complete-border-color) !important;
+}
+.tag:not(.token)[href^="#进行中"] {
+  background-color: var(--inprogress-bg-color) !important;
+  color: var(--tag-text-color) !important;
+  border-color: var(--inprogress-border-color) !important;
+}
+
+.cm-s-obsidian:not([class="markdown-source-view cm-s-obsidian mod-cm6"]) .cm-formatting.cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta.cm-tag-important,
+.cm-s-obsidian:not([class="markdown-source-view cm-s-obsidian mod-cm6"]) span.cm-hashtag.cm-meta.cm-hashtag-end:not(.cm-formatting-hashtag).cm-tag-important {
+  background-color: var(--important-bg-color) !important;
+  color: var(--tag-text-color) !important;
+  border-color: var(--important-border-color) !important;
+}
+.cm-s-obsidian:not([class="markdown-source-view cm-s-obsidian mod-cm6"]) .cm-formatting.cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta.cm-tag-complete,
+.cm-s-obsidian:not([class="markdown-source-view cm-s-obsidian mod-cm6"]) span.cm-hashtag.cm-meta.cm-hashtag-end:not(.cm-formatting-hashtag).cm-tag-complete {
+  background-color: var(--complete-bg-color) !important;
+  color: var(--tag-text-color) !important;
+  border-color: var(--complete-border-color) !important;
+}
+.cm-s-obsidian:not([class="markdown-source-view cm-s-obsidian mod-cm6"]) .cm-formatting.cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta.cm-tag-inprogress,
+.cm-s-obsidian:not([class="markdown-source-view cm-s-obsidian mod-cm6"]) span.cm-hashtag.cm-meta.cm-hashtag-end:not(.cm-formatting-hashtag).cm-tag-inprogress {
+  background-color: var(--inprogress-bg-color) !important;
+  color: var(--tag-text-color) !important;
+  border-color: var(--inprogress-border-color) !important;
+}
+.cm-s-obsidian:not([class="markdown-source-view cm-s-obsidian mod-cm6"]) .cm-formatting.cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta.cm-tag-dailynote,
+.cm-s-obsidian:not([class="markdown-source-view cm-s-obsidian mod-cm6"]) span.cm-hashtag.cm-meta.cm-hashtag-end:not(.cm-formatting-hashtag).cm-tag-dailynote {
+  background-color: var(--dailynote-bg-color) !important;
+  color: var(--tag-text-color) !important;
+  border-color: var(--dailynote-border-color) !important;
+}
+.cm-s-obsidian:not([class="markdown-source-view cm-s-obsidian mod-cm6"]) .cm-formatting.cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta.cm-tag-weeklynote,
+.cm-s-obsidian:not([class="markdown-source-view cm-s-obsidian mod-cm6"]) span.cm-hashtag.cm-meta.cm-hashtag-end:not(.cm-formatting-hashtag).cm-tag-weeklynote {
+  background-color: var(--weeklynote-bg-color) !important;
+  color: var(--tag-text-color) !important;
+  border-color: var(--weeklynote-border-color) !important;
+}
+.cm-s-obsidian:not([class="markdown-source-view cm-s-obsidian mod-cm6"]) .cm-formatting.cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta.cm-tag-ideas,
+.cm-s-obsidian:not([class="markdown-source-view cm-s-obsidian mod-cm6"]) span.cm-hashtag.cm-meta.cm-hashtag-end:not(.cm-formatting-hashtag).cm-tag-ideas {
+  background-color: var(--ideas-bg-color) !important;
+  color: var(--tag-text-color) !important;
+  border-color: var(--ideas-border-color) !important;
+}
+.cm-s-obsidian:not([class="markdown-source-view cm-s-obsidian mod-cm6"]) .cm-formatting.cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta.cm-tag-questions,
+.cm-s-obsidian:not([class="markdown-source-view cm-s-obsidian mod-cm6"]) span.cm-hashtag.cm-meta.cm-hashtag-end:not(.cm-formatting-hashtag).cm-tag-questions {
+  background-color: var(--questions-bg-color) !important;
+  color: var(--tag-text-color) !important;
+  border-color: var(--questions-border-color) !important;
+}
+
+/*rainbow tag*/
+:root {
+  --tag1-text-color: #409eff;
+  --tag1-bg-color: #18222c;
+  --tag1-border-color: #2a598a;
+  --tag2-text-color: #67c23a;
+  --tag2-bg-color: #1c2518;
+  --tag2-border-color: #3e6b27;
+  --tag3-text-color: #909399;
+  --tag3-bg-color: #202121;
+  --tag3-border-color: #525457;
+  --tag4-text-color: #e6a23c;
+  --tag4-bg-color: #292218;
+  --tag4-border-color: #7d5b28;
+  --tag5-text-color: #f56c6c;
+  --tag5-bg-color: #2b1d1d;
+  --tag5-border-color: #854040;
+}
+
+.tag:not(.token):nth-child(5n+1) {
+  background-color: var(--tag1-bg-color);
+  color: var(--tag1-text-color);
+  border-color: var(--tag1-border-color);
+  transition: all 0.5s ease-in-out;
+}
+.tag:not(.token):nth-child(5n+1):hover {
+  background-color: var(--tag1-text-color);
+  color: var(--tag-text-color);
+  border-color: var(--tag1-text-color);
+}
+.tag:not(.token):nth-child(5n+2) {
+  background-color: var(--tag2-bg-color);
+  color: var(--tag2-text-color);
+  border-color: var(--tag2-border-color);
+  transition: all 0.5s ease-in-out;
+}
+.tag:not(.token):nth-child(5n+2):hover {
+  background-color: var(--tag2-text-color);
+  color: var(--tag-text-color);
+  border-color: var(--tag2-text-color);
+}
+.tag:not(.token):nth-child(5n+3) {
+  background-color: var(--tag3-bg-color);
+  color: var(--tag3-text-color);
+  border-color: var(--tag3-border-color);
+  transition: all 0.5s ease-in-out;
+}
+.tag:not(.token):nth-child(5n+3):hover {
+  background-color: var(--tag3-text-color);
+  color: var(--tag-text-color);
+  border-color: var(--tag3-text-color);
+}
+.tag:not(.token):nth-child(5n+4) {
+  background-color: var(--tag4-bg-color);
+  color: var(--tag4-text-color);
+  border-color: var(--tag4-border-color);
+  transition: all 0.5s ease-in-out;
+}
+.tag:not(.token):nth-child(5n+4):hover {
+  background-color: var(--tag4-text-color);
+  color: var(--tag-text-color);
+  border-color: var(--tag4-text-color);
+}
+.tag:not(.token):nth-child(5n+5) {
+  background-color: var(--tag5-bg-color);
+  color: var(--tag5-text-color);
+  border-color: var(--tag5-border-color);
+  transition: all 0.5s ease-in-out;
+}
+.tag:not(.token):nth-child(5n+5):hover {
+  background-color: var(--tag5-text-color);
+  color: var(--tag-text-color);
+  border-color: var(--tag5-text-color);
+}
+
+.cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1), .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + .cm-hashtag.cm-meta, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]), .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]), .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error {
+  background-color: var(--tag1-bg-color);
+  color: var(--tag1-text-color);
+  border-color: var(--tag1-border-color);
+  transition: all 0.5s ease-in-out;
+}
+.cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1):hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + .cm-hashtag.cm-meta:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]):hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]):hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+1) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover {
+  background-color: var(--tag1-text-color);
+  color: var(--tag-text-color);
+  border-color: var(--tag1-text-color);
+}
+
+.cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2), .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + .cm-hashtag.cm-meta, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]), .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]), .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error {
+  background-color: var(--tag2-bg-color);
+  color: var(--tag2-text-color);
+  border-color: var(--tag2-border-color);
+  transition: all 0.5s ease-in-out;
+}
+.cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2):hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + .cm-hashtag.cm-meta:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]):hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]):hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+2) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover {
+  background-color: var(--tag2-text-color);
+  color: var(--tag-text-color);
+  border-color: var(--tag2-text-color);
+}
+
+.cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3), .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + .cm-hashtag.cm-meta, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]), .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]), .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error {
+  background-color: var(--tag3-bg-color);
+  color: var(--tag3-text-color);
+  border-color: var(--tag3-border-color);
+  transition: all 0.5s ease-in-out;
+}
+.cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3):hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + .cm-hashtag.cm-meta:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]):hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]):hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+3) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover {
+  background-color: var(--tag3-text-color);
+  color: var(--tag-text-color);
+  border-color: var(--tag3-text-color);
+}
+
+.cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4), .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + .cm-hashtag.cm-meta, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]), .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]), .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error {
+  background-color: var(--tag4-bg-color);
+  color: var(--tag4-text-color);
+  border-color: var(--tag4-border-color);
+  transition: all 0.5s ease-in-out;
+}
+.cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4):hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + .cm-hashtag.cm-meta:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]):hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]):hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+4) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover {
+  background-color: var(--tag4-text-color);
+  color: var(--tag-text-color);
+  border-color: var(--tag4-text-color);
+}
+
+.cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5), .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + .cm-hashtag.cm-meta, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]), .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]), .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-hashtag-end, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error {
+  background-color: var(--tag5-bg-color);
+  color: var(--tag5-text-color);
+  border-color: var(--tag5-border-color);
+  transition: all 0.5s ease-in-out;
+}
+.cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5):hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + .cm-hashtag.cm-meta:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:not([class*=cm-hashtag-end]) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]):hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]):hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-hashtag-end:hover, .cm-s-obsidian span.cm-hashtag-begin:nth-child(5n+5) + span.cm-hashtag.cm-meta + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error + span.cm-hashtag.cm-meta:not([class*=cm-hashtag-begin]) + span.cm-hashtag.cm-meta.cm-overlay.cm-spell-error:hover {
+  background-color: var(--tag5-text-color);
+  color: var(--tag-text-color);
+  border-color: var(--tag5-text-color);
+}
+
+div[class="markdown-source-view cm-s-obsidian mod-cm6"] span.cm-hashtag {
+  background-color: transparent !important;
+  color: var(--text-muted) !important;
+  text-decoration: underline;
+  padding: 0 !important;
+}
+div[class="markdown-source-view cm-s-obsidian mod-cm6"] span.cm-hashtag-begin, div[class="markdown-source-view cm-s-obsidian mod-cm6"] span.cm-hashtag-end, div[class="markdown-source-view cm-s-obsidian mod-cm6"] span.cm-hashtag-begin + .cm-hashtag.cm-meta {
+  padding: 0 !important;
+}
+
+/* 自定义checkbox 默认使用 */
+input[data-task="#"]:checked,
+li[data-task="#"] > input:checked,
+li[data-task="#"] > p > input:checked {
+  --checkbox-marker-color: transparent;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: currentColor;
+  -webkit-mask-size: var(--checkbox-icon);
+  -webkit-mask-position: 50% 50%;
+}
+
+input[data-task=r]:checked,
+li[data-task=r] > input:checked,
+li[data-task=r] > p > input:checked {
+  --checkbox-marker-color: transparent;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: currentColor;
+  -webkit-mask-size: var(--checkbox-icon);
+  -webkit-mask-position: 50% 50%;
+}
+
+input[data-task="#"]:checked,
+li[data-task="#"] > input:checked,
+li[data-task="#"] > p > input:checked {
+  color: var(--color-blue);
+  -webkit-mask-image: url('data:image/svg+xml,%3Csvg t="1686091695032" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3928" width="20" height="20"%3E%3Cpath d="M329.142857 256q0-30.285714-21.428571-51.714286T256 182.857143t-51.714286 21.428571T182.857143 256t21.428571 51.714286T256 329.142857t51.714286-21.428571T329.142857 256z m609.714286 329.142857q0 30.285714-21.142857 51.428572l-280.571429 281.142857q-22.285714 21.142857-52 21.142857-30.285714 0-51.428571-21.142857L125.142857 508.571429q-21.714286-21.142857-36.857143-57.714286T73.142857 384V146.285714q0-29.714286 21.714286-51.428571t51.428571-21.714286h237.714286q30.285714 0 66.857143 15.142857T509.142857 125.142857l408.571429 408q21.142857 22.285714 21.142857 52z" p-id="3929" fill="currentColor" /%3E%3C/svg%3E');
+}
+
+input[data-task=r]:checked,
+li[data-task=r] > input:checked,
+li[data-task=r] > p > input:checked {
+  color: var(--color-red);
+  -webkit-mask-image: url('data:image/svg+xml,%3Csvg t="1686092726651" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6513" width="20" height="20"%3E%3Cpath d="M431.109721 360.974302c-19.450279 0-35.353743 15.78905-35.353743 35.353743 0 19.450279 15.903464 35.353743 35.353743 35.353743s35.353743-15.78905 35.353743-35.353743c0-19.450279-15.78905-35.353743-35.353743-35.353743z m-155.602235 269.672402c-19.450279 0-35.353743 15.78905-35.353743 35.353743 0 19.450279 15.903464 35.353743 35.353743 35.353743s35.353743-15.78905 35.353743-35.353743c-0.114413-19.564693-15.903464-35.353743-35.353743-35.353743z m340.951955-98.624358c-2.517095-0.572067-5.03419-0.800894-7.551285-0.800893-16.246704 0-30.89162 11.326927-34.552849 27.802458-4.118883 18.992626 8.008939 37.870838 27.001565 41.98972 18.992626 4.118883 37.870838-8.008939 41.98972-27.001564 4.233296-18.992626-7.894525-37.870838-26.887151-41.989721zM512 0C229.284469 0 0 229.284469 0 512S229.284469 1024 512 1024 1024 794.715531 1024 512 794.715531 0 512 0z m240.268156 449.644693c-8.352179 0-16.475531-1.258547-24.255642-3.432402l-46.451844 67.618324c14.530503 20.022346 20.937654 45.879777 15.216984 71.85162-9.153073 41.989721-46.451844 70.821899-87.869498 70.821899-6.292737 0-12.699888-0.68648-19.107039-2.059441-48.396872-10.526034-79.288492-58.465251-68.762458-106.976537 0.915307-4.118883 2.173855-8.123352 3.546816-12.013407l-56.863464-57.092291c-11.212514 5.03419-23.569162 7.894525-36.726704 7.894525-6.635978 0-13.043128-0.800894-19.221452-2.059441l-70.135419 121.392626c14.530503 16.017877 23.454749 37.184358 23.454748 60.410279 0 49.541006-40.387933 89.928939-89.928938 89.928938s-89.928939-40.387933-89.928939-89.928938 40.387933-89.928939 89.928939-89.928939c6.635978 0 13.043128 0.800894 19.221452 2.059442l70.135419-121.392626c-14.530503-16.017877-23.569162-37.184358-23.569162-60.410279 0-49.541006 40.387933-89.928939 89.928939-89.928939s89.928939 40.387933 89.928938 89.928939c0 16.589944-4.576536 32.150168-12.471061 45.536536l49.998659 50.341899c0.572067-0.34324 1.144134-0.800894 1.716201-1.258547 20.13676-12.928715 44.277989-17.390838 67.732738-12.242235 3.317989 0.68648 6.407151 1.601788 9.610726 2.631509l44.850056-65.101229c-12.585475-15.44581-20.022346-35.124916-20.022347-56.520224 0-49.541006 40.387933-89.928939 89.928939-89.928938s89.928939 40.387933 89.928939 89.928938-40.27352 89.928939-89.814526 89.928939z m0-125.282682c-19.450279 0-35.353743 15.78905-35.353743 35.353743 0 19.450279 15.78905 35.353743 35.353743 35.353743s35.353743-15.78905 35.353743-35.353743c0-19.450279-15.903464-35.353743-35.353743-35.353743z" fill="currentColor" p-id="6514"%3E%3C/path%3E%3C/svg%3E');
+}
+
+/* 自定义表格样式 */
+:is(.markdown-preview-view, .markdown-rendered) table tbody > tr:hover,
+.markdown-source-view table tbody > tr:hover {
+  transform: scale(1.02);
+  transition: transform 100ms cubic-bezier(0.11, 0.33, 0.23, 0.33);
+}
+:is(.markdown-preview-view, .markdown-rendered) table tbody > tr:hover > td:first-child,
+.markdown-source-view table tbody > tr:hover > td:first-child {
+  padding-left: 10px;
+}
+
+/* cssclass: colorful-highlight */
+:root {
+  --color-highlight-1: var(--text-normal);
+  --color-highlight-2: var(--text-normal);
+  --color-highlight-3: var(--text-normal);
+  --bg-color-highlight-1: #c865656f;
+  --bg-color-highlight-2: #54b9476f;
+  --bg-color-highlight-3: #1e83d086;
+  --font-weight-highlight-1: normal;
+  --font-weight-highlight-2: normal;
+  --font-weight-highlight-3: normal;
+}
+
+.markdown-source-view .cm-highlight[class*=formatting] {
+  background-color: transparent;
+}
+
+/* *==xxx==* 斜体+高亮 */
+.markdown-source-view .cm-em.cm-highlight:not(.cm-strong):not([class*=formatting]),
+:is(.markdown-preview-view, .markdown-source-view) :not(font):not(strong) > em > mark {
+  background-color: var(--bg-color-highlight-1);
+  color: var(--color-highlight-1);
+  font-style: normal;
+  font-weight: var(--font-weight-highlight-1);
+  border-radius: var(--radius-s);
+  padding: 2px 4px;
+}
+
+/* **==xxxx==** 加粗+高亮 */
+.markdown-source-view .cm-strong.cm-highlight:not(.cm-em):not([class*=formatting]),
+:is(.markdown-preview-view, .markdown-source-view) :not(font):not(em) > strong > mark {
+  background-color: var(--bg-color-highlight-2);
+  color: var(--color-highlight-2);
+  font-weight: var(--font-weight-highlight-2);
+  border-radius: var(--radius-s);
+  padding: 2px 4px;
+}
+
+/* ***==xxxx==*** 加粗+斜体+高亮 */
+.markdown-source-view .cm-strong.cm-em.cm-highlight:not([class*=formatting]),
+:is(.markdown-preview-view, .markdown-source-view) :not(font) > strong > em > mark {
+  background-color: var(--bg-color-highlight-3);
+  color: var(--color-highlight-3);
+  -webkit-text-fill-color: unset;
+  font-style: normal;
+  font-weight: var(--font-weight-highlight-3);
+  border-radius: var(--radius-s);
+  padding: 2px 4px;
+}
+
+.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
+.cm-formatting.cm-formatting-code.cm-inline-code {
+  border-radius: var(--radius-s);
+  padding: 2px 2px 1px;
+}
+
+.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
+.cm-formatting.cm-formatting-code.cm-inline-code {
+  color: #88c0d0;
+  background-color: rgba(64, 64, 64, 0.6901960784);
+}
+
+:is(.markdown-preview-view, .markdown-rendered) code {
+  vertical-align: auto;
+  background-color: rgba(64, 64, 64, 0.6901960784);
+}
+
+.cm-s-obsidian pre.HyperMD-codeblock,
+:is(.markdown-preview-view, .markdown-rendered) code,
+.markdown-rendered code {
+  color: #88c0d0;
+  font-size: 1em !important;
+  text-align: start;
+}
+
+/* 自定义callout */
+/* ================================== */
+/* ======= Callout======= */
+/* ================================== */
+.callout {
+  border: none;
+  box-shadow: inset 0 0 0 2px rgba(var(--callout-color), 0.25), 0px 0.5px 1px 0.5px rgba(0, 0, 0, 0.1) !important;
+}
+
+.callout .callout-title {
+  padding: 6px;
+  background-color: rgba(var(--callout-color), 0.4);
+}
+
+.callout-title {
+  background-color: rgba(var(--callout-color), 0.15);
+}
+
+.callout-title-inner {
+  flex: 1 1 auto;
+}
+
+.callout {
+  padding: 0;
+  border-left: 4px solid rgba(var(--callout-color), 0.15);
+}
+
+.callout-fold {
+  padding-right: 16px;
+}
+
+.callout.is-collapsed .callout-fold svg {
+  transform: rotate(-90deg);
+}
+
+.callout-content {
+  padding: 5px 15px;
+}
+
+.is-live-preview:not(.is-readable-line-width) .cm-embed-block > .edit-block-button,
+.markdown-source-view.mod-cm6 .edit-block-button {
+  top: 4px;
+}
+
+.is-live-preview .admonition-content > * br {
+  display: unset;
+}
+
+.callout-title {
+  padding: 12px 0 12px 12px;
+  color: unset;
+}
+
+.admonition-title .admonition-title-icon {
+  color: rgb(var(--callout-color));
+}
+
+.callout .callout-title-inner > img:not([class*=emoji]) {
+  border-radius: 1em !important;
+  margin: auto;
+  display: block;
+}
+
+.callout-title-inner.admonition-title-content svg {
+  height: 1em;
+  align-self: center;
+  width: 1em;
+}
+
+.callout-icon svg {
+  height: 1em;
+}
+
+.markdown-source-view.is-live-preview .admonition-content .callout-content :is(h1, h2, h3, h4, h5, h6, p) {
+  margin: 0;
+}
+
+.callout .callout-content p img {
+  display: block;
+}
+
+.is-live-preview .callout:not(.admonition) .callout-content {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.callout-content {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.callout img[alt*=circle] {
+  border-radius: 35px;
+  width: 70px;
+  height: 70px;
+}
+
+/*全透明callout*/
+.callout.callout[data-callout*=blank] {
+  box-shadow: none;
+  max-width: 100%;
+  background: transparent;
+  border: none;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  margin: 0;
+}
+
+.callout.callout[data-callout*=blank].is-collapsed .callout-fold {
+  border: none;
+  padding: 5px 10px;
+}
+
+.callout.callout[data-callout*=blank] .callout-title,
+.callout.callout[data-callout*=blank] .callout-title :is(.callout-icon, .callout-title-inner) {
+  display: none;
+}
+
+.callout.callout[data-callout*=blank] .callout-content {
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* callout模糊文字效果*/
+.callout.callout[data-callout=cloze] {
+  border-left-width: 0;
+  filter: blur(4px);
+}
+
+.callout.callout[data-callout=cloze]:hover {
+  filter: none;
+}
+
+.callout.callout[data-callout=cloze] .callout-title {
+  display: none;
+}
+
+/* callout伪看板效果*/
+.callout.callout[data-callout*=kanban] .callout-title {
+  background-color: rgba(245, 34, 45, 0.4);
+}
+.callout.callout[data-callout*=kanban] .callout-title .callout-icon {
+  display: none;
+}
+.callout.callout[data-callout*=kanban] .callout-title .callout-title-inner {
+  font-size: 1.125rem;
+}
+.callout.callout[data-callout*=kanban] .callout-content {
+  padding-top: 0px;
+}
+.callout.callout[data-callout*=kanban] .callout-content ul.has-list-bullet {
+  margin-top: 4px;
+}
+
+.callout.callout[data-callout*=kanban] ul {
+  display: flex;
+  flex-direction: row;
+  border: 0px solid var(--p-kanban-border-color);
+  padding: 0;
+  border-radius: var(--radius-m);
+  flex-wrap: wrap;
+}
+
+.callout.callout[data-callout*=kanban] li .list-bullet {
+  display: none;
+}
+
+.callout.callout[data-callout*=kanban] ul > li {
+  flex: 1 1 20%;
+  padding: 0.1em 1em 0.1em 0.8em;
+  margin: 0 0.3em 0.3em 0 !important;
+  list-style: none;
+  border: 1px solid var(--p-kanban-border-color);
+  border-left: 1px solid var(--p-kanban-border-color) !important;
+  border-radius: var(--radius-s);
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.callout.callout[data-callout*=kanban] ul li.task-list-item .task-list-item-checkbox {
+  margin-left: auto;
+}
+
+.callout.callout[data-callout*=kanban] ul .list-collapse-indicator.collapse-indicator.collapse-icon::before {
+  color: var(--text-accent);
+  transition: transform 10ms linear 0s;
+}
+
+.callout.callout[data-callout*=kanban] ul > li:nth-of-type(n) {
+  background-color: var(--p-kanban-color-simple);
+  padding-left: 1em;
+}
+
+.callout.callout[data-callout*=kanban] .callout-content > ul:first-child > li:nth-of-type(8n + 1) {
+  border-top: 6px solid var(--p-kanban-color-1) !important;
+}
+
+.callout.callout[data-callout*=kanban] .callout-content > ul:first-child > li:nth-of-type(8n + 2) {
+  border-top: 6px solid var(--p-kanban-color-2) !important;
+}
+
+.callout.callout[data-callout*=kanban] .callout-content > ul:first-child > li:nth-of-type(8n + 3) {
+  border-top: 6px solid var(--p-kanban-color-3) !important;
+}
+
+.callout.callout[data-callout*=kanban] .callout-content > ul:first-child > li:nth-of-type(8n + 4) {
+  border-top: 6px solid var(--p-kanban-color-4) !important;
+}
+
+.callout.callout[data-callout*=kanban] .callout-content > ul:first-child > li:nth-of-type(8n + 5) {
+  border-top: 6px solid var(--p-kanban-color-5) !important;
+}
+
+.callout.callout[data-callout*=kanban] .callout-content > ul:first-child > li:nth-of-type(8n + 6) {
+  border-top: 6px solid var(--p-kanban-color-6) !important;
+}
+
+.callout.callout[data-callout*=kanban] .callout-content > ul:first-child > li:nth-of-type(8n + 7) {
+  border-top: 6px solid var(--p-kanban-color-7) !important;
+}
+
+.callout.callout[data-callout*=kanban] .callout-content > ul:first-child > li:nth-of-type(8n) {
+  border-top: 6px solid var(--p-kanban-color-8) !important;
+}
+
+.callout.callout[data-callout*=kanban] ul > li:hover {
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);
+  box-shadow: 0 3px 5px 0 var(--p-kanban-color-shadow), 0 3px 1px -3px var(--p-kanban-color-shadow), 2px 3px 3px 0 var(--p-kanban-color-shadow);
+}
+
+.callout.callout[data-callout*=kanban] ul ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0rem;
+  margin-top: 0.5rem;
+  border-radius: 0;
+  border: 0;
+  background: none;
+}
+
+.callout.callout[data-callout*=kanban] ul ul li:not(.task-list-item) {
+  width: 100%;
+  display: block;
+  background-color: var(--p-kanban-card-color-1) !important;
+}
+
+.callout.callout[data-callout*=kanban] ul ul li .task-list-item-checkbox {
+  margin-left: 1.5rem !important;
+}
+
+.callout.callout[data-callout*=kanban] ul ul ul {
+  margin-right: 0;
+}
+
+.callout.callout[data-callout*=kanban] ul ul::before {
+  border-left: 0;
+  border: 0;
+}
+
+:is(.markdown-preview-view, .markdown-rendered).is-readable-line-width.callout.callout[data-callout*=kanban] .markdown-preview-sizer > div > ul {
+  max-width: 100%;
+}
+
+.callout.callout[data-callout*=kanban] :is(ol, ul).contains-task-list :is(ol, ul) {
+  position: initial;
+}
+
+.callout.callout[data-callout*=kanban] :is(ol, ul).contains-task-list :is(ol, ul)::before {
+  all: initial;
+}
+
+.callout.callout[data-callout*=kanban] ul > li.task-list-item {
+  flex: 1 1 20%;
+  padding: 0.1em 1em;
+  list-style: none;
+  border: 1px solid var(--p-kanban-border-color);
+  border-left: 1px solid var(--p-kanban-border-color) !important;
+  border-radius: var(--radius-s);
+  word-wrap: break-word;
+  word-break: break-word;
+  text-indent: 0.01em;
+}
+
+.callout.callout[data-callout*=kanban] ul ul li.task-list-item {
+  width: 100%;
+  display: block;
+  padding-left: 2em;
+  text-indent: -3em;
+  background-color: var(--p-kanban-card-color-1) !important;
+}
+
+.callout.callout[data-callout*=kanban] ul ul li.task-list-item .list-collapse-indicator.collapse-indicator.collapse-icon {
+  text-indent: -1em;
+}
+
+.callout.callout[data-callout*=kanban] li.task-list-item .list-collapse-indicator.collapse-indicator.collapse-icon::before {
+  margin-left: -0.2em;
+}
+
+.callout.callout[data-callout*=kanban] li.task-list-item .task-list-item.is-collapsed .list-collapse-indicator.collapse-indicator.collapse-icon::before {
+  transform: translateX(-0.9em) translateY(-1em) rotate(-90deg);
+}
+
+/*callout hibox*/
+.callout.callout[data-callout*=hibox] {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.callout.callout[data-callout*=hibox] .callout-content *,
+.callout.callout[data-callout*=hibox] .callout-content *::before,
+.callout.callout[data-callout*=hibox] .callout-content *::marker {
+  visibility: hidden;
+}
+
+.callout.callout[data-callout*=hibox] .callout-content {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  background: radial-gradient(circle at 0px 0px, var(--background-modifier-box-shadow), 0, var(--background-modifier-box-shadow), var(--hibox), transparent var(--hibox), transparent 0);
+  transition: --hibox 0.6s linear;
+}
+
+.callout.callout[data-callout*=hibox] .callout-content:hover {
+  --hibox: 1500px;
+  box-shadow: 0 0.2rem 0.5rem var(--background-modifier-box-shadow) !important;
+}
+
+.callout.callout[data-callout*=hibox] .callout-content:hover *,
+.callout.callout[data-callout*=hibox] .callout-content:hover *::marker,
+.callout.callout[data-callout*=hibox] .callout-content:hover *::before {
+  border-color: inherit;
+  visibility: visible;
+}
+
+.callout.callout[data-callout*=hibox] .callout-content:hover ol:not(.contains-task-list) > li:not(.task-list-item) {
+  border-color: var(--list-ol-block-color) !important;
+}
+
+.callout.callout[data-callout*=hibox] .callout-content:hover ul > li:not(.task-list-item) {
+  border-color: var(--list-ul-block-color) !important;
+}
+
+.callout.callout[data-callout*=hibox] .callout-content:hover blockquote {
+  border-color: var(--theme-color) !important;
+  background-color: var(--background-blockquote) !important;
+}
+
+.callout.callout[data-callout*=hibox] .callout-content:hover {
+  border-color: var(--text-normal) !important;
+}
+
+/******callout bookinfo*****/
+.callout.callout[data-callout*=bookinfo] {
+  --callout-color: 64, 201, 75;
+  --callout-icon: "book-marked";
+  overflow: unset;
+  width: auto;
+}
+
+.callout.callout[data-callout*=bookinfo] .callout-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.callout.callout[data-callout*=bookinfo] .callout-content table {
+  width: 68%;
+  margin-left: 2%;
+  word-break: normal;
+}
+
+.callout.callout[data-callout*=bookinfo] .callout-content table tr th {
+  padding-right: 5px;
+}
+
+.callout.callout[data-callout*=bookinfo] .callout-content td:nth-child(2) {
+  display: table-cell;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .callout.callout[data-callout*=bookinfo] .callout-content table {
+    width: 100%;
+  }
+  .callout.callout[data-callout*=bookinfo] .callout-content {
+    display: grid;
+  }
+}
+/* ===百分比宽度============ */
+/*支持两种写法
+  > [!note|30%]
+  > [!note 30%]
+*/
+.callout.callout:is([data-callout-metadata*="100%"], [data-callout*="100%"]) {
+  width: 100%;
+}
+
+.callout.callout:is([data-callout-metadata*="95%"], [data-callout*="95%"]) {
+  width: 95%;
+}
+
+.callout.callout:is([data-callout-metadata*="90%"], [data-callout*="90%"]) {
+  width: 90%;
+}
+
+.callout.callout:is([data-callout-metadata*="85%"], [data-callout*="85%"]) {
+  width: 85%;
+}
+
+.callout.callout:is([data-callout-metadata*="80%"], [data-callout*="80%"]) {
+  width: 80%;
+}
+
+.callout.callout:is([data-callout-metadata*="75%"], [data-callout*="75%"]) {
+  width: 75%;
+}
+
+.callout.callout:is([data-callout-metadata*="70%"], [data-callout*="70%"]) {
+  width: 70%;
+}
+
+.callout.callout:is([data-callout-metadata*="65%"], [data-callout*="65%"]) {
+  width: 65%;
+}
+
+.callout.callout:is([data-callout-metadata*="60%"], [data-callout*="60%"]) {
+  width: 60%;
+}
+
+.callout.callout:is([data-callout-metadata*="55%"], [data-callout*="55%"]) {
+  width: 55%;
+}
+
+.callout.callout:is([data-callout-metadata*="50%"], [data-callout*="50%"]) {
+  width: 50%;
+}
+
+.callout.callout:is([data-callout-metadata*="45%"], [data-callout*="45%"]) {
+  width: 45%;
+}
+
+.callout.callout:is([data-callout-metadata*="40%"], [data-callout*="40%"]) {
+  width: 40%;
+}
+
+.callout.callout:is([data-callout-metadata*="35%"], [data-callout*="35%"]) {
+  width: 35%;
+}
+
+.callout.callout:is([data-callout-metadata*="30%"], [data-callout*="30%"]) {
+  width: 30%;
+}
+
+.callout.callout:is([data-callout-metadata*="25%"], [data-callout*="25%"]) {
+  width: 25%;
+}
+
+.callout.callout:is([data-callout-metadata*="20%"], [data-callout*="20%"]) {
+  width: 20%;
+}
+
+.callout.callout:is([data-callout-metadata*="15%"], [data-callout*="15%"]) {
+  width: 15%;
+}
+
+.callout.callout:is([data-callout-metadata*="10%"], [data-callout*="10%"]) {
+  width: 10%;
+}
+
+/* ===支持 right left  center 语法============ */
+/*支持两种写法
+      > [!note|right]
+      > [!note right]
+     */
+.callout.callout:is([data-callout-metadata*=left], [data-callout*=left]) {
+  float: left !important;
+  margin: unset;
+}
+
+.callout.callout:is([data-callout-metadata*=right], [data-callout*=right]) {
+  float: right !important;
+  margin: unset;
+}
+
+.callout.callout:is([data-callout-metadata*=center], [data-callout*=center]) {
+  display: block;
+  margin: auto;
+  float: unset;
+  text-align: center;
+}
+
+/******callout timeline*****/
+.callout.callout[data-callout=timeline] {
+  --callout-color: 31, 172, 139;
+  --callout-icon: '<svg t="1649346326592" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2210"><path d="M384 170.666667m42.666667 0l512 0q42.666667 0 42.666666 42.666666l0 0q0 42.666667-42.666666 42.666667l-512 0q-42.666667 0-42.666667-42.666667l0 0q0-42.666667 42.666667-42.666666Z" p-id="2211"></path><path d="M384 469.333333m42.666667 0l512 0q42.666667 0 42.666666 42.666667l0 0q0 42.666667-42.666666 42.666667l-512 0q-42.666667 0-42.666667-42.666667l0 0q0-42.666667 42.666667-42.666667Z" p-id="2212"></path><path d="M384 768m42.666667 0l512 0q42.666667 0 42.666666 42.666667l0 0q0 42.666667-42.666666 42.666666l-512 0q-42.666667 0-42.666667-42.666666l0 0q0-42.666667 42.666667-42.666667Z" p-id="2213"></path><path d="M239.835143 127.973411m15.084945 15.084944l60.339779 60.339779q15.084945 15.084945 0 30.169889l-60.339779 60.339779q-15.084945 15.084945-30.169889 0l-60.339779-60.339779q-15.084945-15.084945 0-30.169889l60.339779-60.339779q15.084945-15.084945 30.169889 0Z" p-id="2214"></path><path d="M239.831988 426.647696m15.084944 15.084945l60.339779 60.339778q15.084945 15.084945 0 30.16989l-60.339779 60.339778q-15.084945 15.084945-30.169889 0l-60.339779-60.339778q-15.084945-15.084945 0-30.16989l60.339779-60.339778q15.084945-15.084945 30.169889 0Z" p-id="2215"></path><path d="M239.828832 725.321982m15.084944 15.084944l60.339779 60.339779q15.084945 15.084945 0 30.169889l-60.339779 60.339779q-15.084945 15.084945-30.169889 0l-60.339779-60.339779q-15.084945-15.084945 0-30.169889l60.339779-60.339779q15.084945-15.084945 30.169889 0Z" p-id="2216"></path><path d="M213.333333 853.333333H85.333333a42.666667 42.666667 0 0 1-42.666666-42.666666V213.333333a42.666667 42.666667 0 0 1 42.666666-42.666666h128v85.333333H138.666667a10.709333 10.709333 0 0 0-10.666667 10.666667v192a10.709333 10.709333 0 0 0 10.666667 10.666666H213.333333v85.333334H138.666667a10.709333 10.709333 0 0 0-10.666667 10.666666v192a10.709333 10.709333 0 0 0 10.666667 10.666667H213.333333v85.333333z" p-id="2217"></path></svg>';
+  border-left: none;
+  background-color: transparent;
+}
+
+.callout.callout[data-callout=timeline] > .callout-content {
+  border-left: none;
+  display: grid;
+  grid-template-columns: 0.3fr auto 1fr;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+  row-gap: 0.25rem;
+  margin: 2.3rem 1rem 0 0;
+  padding: 0;
+}
+
+.callout.callout[data-callout=timeline] .callout-content hr::before {
+  display: none;
+}
+
+.callout.callout[data-callout=timeline] .callout-content hr {
+  height: 100%;
+  width: 0.5rem;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/span 1;
+  grid-row-start: 1;
+  background-color: var(--text-normal);
+  opacity: 0.1;
+  grid-row-end: 9;
+  margin: auto;
+  border: none;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.callout.callout[data-callout=timeline] .callout-content blockquote {
+  display: block;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/span 1;
+  position: relative;
+  align-self: start;
+  text-align: left;
+  box-shadow: none;
+  margin: 0;
+  border: none;
+  /*     padding: 0; */
+  background-color: unset;
+}
+
+.callout.callout[data-callout=timeline] .callout-content blockquote p::before {
+  display: none;
+}
+
+/*   .callout.callout[data-callout="timeline"] .callout-content blockquote,
+  .callout.callout[data-callout="timeline"] .callout-content blockquote + *:not(.callout),
+  .callout.callout[data-callout="timeline"] .callout-content hr+ *:not(.callout) {
+    padding-top: 1em;
+  } */
+.callout.callout[data-callout=timeline] .callout-content blockquote p {
+  display: block;
+  color: var(--text-on-accent);
+  background-color: var(--interactive-accent);
+  font-style: normal;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.callout.callout[data-callout=timeline] .callout-content > *:not(blockquote):not(hr) {
+  position: relative;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/span 1;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.callout.callout[data-callout=timeline] table {
+  font-size: 13px;
+}
+
+/* ================================== */
+/* =========== admonition =========== */
+/* ================================== */
+.admonition {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
+.callout.admonition .admonition-content {
+  overflow: hidden;
+}
+
+.callout:not(.admonition).drop-shadow {
+  box-shadow: var(--window-shadow2);
+}
+
+.callout.admonition.admonition-plugin.is-collapsed {
+  overflow: hidden;
+}
+
+/*blank ad分栏
+  修改自 https://forum-zh.obsidian.md/t/topic/2081 */
+.is-live-preview .admonition-col2 .callout-content.admonition-content > div:nth-child(2),
+.is-live-preview .admonition-col3 .callout-content.admonition-content > div:nth-child(2),
+.is-live-preview .admonition-col4 .callout-content.admonition-content > div:nth-child(2) {
+  margin-top: -1.5em;
+}
+
+.admonition-kanban .admonition-title-icon,
+.admonition-flex .admonition-title-icon,
+.admonition-col2 .admonition-title-icon,
+.admonition-col3 .admonition-title-icon,
+.admonition-col4 .admonition-title-icon {
+  display: none;
+}
+
+.is-live-preview :is(.admonition-col2, .admonition-col3, .admonition-col4, .admonition-flex) .admonition-content blockquote {
+  padding: 0;
+  margin: 0;
+  line-height: 1em;
+}
+
+:is(.admonition-col2, .admonition-col3, .admonition-col4, .admonition-flex) .admonition-content blockquote {
+  flex: 100%;
+  border-left: none;
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  margin: 0;
+  box-shadow: none;
+  background-color: transparent;
+  color: var(--text-muted);
+}
+
+:is(.admonition-col2, .admonition-col3, .admonition-col4, .admonition-flex) .admonition-content blockquote p::before {
+  display: none;
+}
+
+:is(.admonition-col2, .admonition-col3, .admonition-col4, .admonition-flex) .admonition-content blockquote p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+:is(.callout.admonition-col2, .callout.admonition-col3, .callout.admonition-col4, .callout.admonition-flex) > .admonition-content > ul {
+  margin-left: auto;
+}
+
+.admonition-col2 .admonition-content > ul,
+.admonition-col3 .admonition-content > ul,
+.admonition-col4 .admonition-content > ul,
+.admonition-flex .admonition-content > ul {
+  -webkit-padding-start: 20px !important;
+          padding-inline-start: 20px !important;
+  margin-left: -20px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+
+:is(.admonition-flex, .admonition-col2, .admonition-col3, .admonition-col4) .admonition-content .admonition-content > ul > li {
+  list-style-type: none;
+  padding: 0;
+}
+
+.admonition-col2 .admonition-content ul li .task-list-item-checkbox,
+.admonition-col3 .admonition-content ul li .task-list-item-checkbox,
+.admonition-col4 .admonition-content ul li .task-list-item-checkbox,
+.admonition-flex .admonition-content ul li .task-list-item-checkbox {
+  margin-left: auto;
+}
+
+:is(.admonition-col2, .admonition-col3, .admonition-col4, .admonition-flex) .callout-content ul.dataview.list-view-ul > li:not(.task-list-item) {
+  margin-left: auto;
+}
+
+.admonition-col2 {
+  box-shadow: none !important;
+}
+
+.admonition-col2 .admonition {
+  overflow: visible;
+  margin: 0;
+}
+
+.admonition-col2 > .admonition-content-holder > .admonition-content {
+  columns: 150px 2;
+  -moz-columns: 150px 2;
+  -webkit-columns: 150px 2;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+  overflow: visible;
+  margin: 0;
+  /*分栏的分割线
+    column-rule: 1px solid #d4d2d2; */
+}
+
+.callout.admonition-col2 > .admonition-content {
+  columns: 150px 2;
+  -moz-columns: 150px 2;
+  -webkit-columns: 150px 2;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+  overflow: visible;
+  margin: 0;
+  /*分栏的分割线
+    column-rule: 1px solid #d4d2d2; */
+}
+
+.admonition-col2 .admonition-content ol,
+.admonition-col2 .admonition-content ul {
+  margin-top: -0.25em;
+}
+
+:is(.markdown-preview-view, .markdown-rendered) .admonition-col2 .admonition-content :is(h3, h4) {
+  margin-top: -0.001em !important;
+}
+
+.admonition-kanban .admonition-col2 .admonition-content ol {
+  margin: 0;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
+.admonition-kanban .admonition-col2 .admonition-content ul {
+  margin: 0;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
+.admonition-col2 .admonition-content {
+  overflow: visible;
+}
+
+.admonition-col2 > .admonition-content-holder {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.admonition-col2 p {
+  text-align: justify;
+  margin-top: 0;
+  padding: 2px;
+  /*  height:100%;
+    overflow: auto; */
+}
+
+.admonition-col2 p > img {
+  display: block;
+  height: auto;
+}
+
+.admonition-col2-parent .admonition-col2 .admonition > .admonition-title.no-title + .admonition-content-holder {
+  margin-top: 0;
+}
+
+/****col3 三栏*****/
+.admonition-col3 {
+  box-shadow: none !important;
+}
+
+.admonition-col3 .admonition {
+  overflow: visible;
+  margin: 0;
+}
+
+.callout.admonition-col3 > .admonition-content {
+  columns: 100px 3;
+  -moz-columns: 100px 3;
+  -webkit-columns: 100px 3;
+  -moz-column-gap: 1vw;
+       column-gap: 1vw;
+  overflow: visible;
+  margin: 0;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  -moz-column-rule: 1px solid #d4d2d2;
+       column-rule: 1px solid #d4d2d2;
+}
+
+.admonition-col3 > .admonition-content-holder > .admonition-content {
+  columns: 100px 3;
+  -moz-columns: 100px 3;
+  -webkit-columns: 100px 3;
+  -moz-column-gap: 1vw;
+       column-gap: 1vw;
+  overflow: visible;
+  margin: 0;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  -moz-column-rule: 1px solid #d4d2d2;
+       column-rule: 1px solid #d4d2d2;
+}
+
+.admonition-col3 .admonition-content ol,
+.admonition-col3 .admonition-content ul {
+  margin-top: 0.75em;
+}
+
+.admonition-kanban .admonition-col3 .admonition-content ul {
+  margin: 0;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
+.admonition-kanban .admonition-col3 .admonition-content ol {
+  margin: 0;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
+.admonition-col3 .admonition-content {
+  overflow: visible;
+}
+
+.admonition-col3 > .admonition-content-holder {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.admonition-col3 p {
+  text-align: justify;
+  margin-top: 0;
+  padding: 2px;
+  /*  height:100%;
+    overflow: auto; */
+}
+
+.admonition-col3 p > img {
+  display: block;
+  height: auto;
+}
+
+.admonition-col3-parent .admonition-col3 .admonition > .admonition-title.no-title + .admonition-content-holder {
+  margin-top: 0;
+}
+
+/****col4 四栏*****/
+.admonition-col4 {
+  box-shadow: none !important;
+}
+
+.admonition-col4 .admonition {
+  overflow: visible;
+  margin: 0;
+}
+
+.callout.admonition-col4 > .admonition-content {
+  -moz-column-count: 4;
+       column-count: 4;
+  -moz-column-gap: 1vw;
+       column-gap: 1vw;
+  overflow: visible;
+  margin: 0;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
+.admonition-col4 > .admonition-content-holder > .admonition-content {
+  -moz-column-count: 4;
+       column-count: 4;
+  -moz-column-gap: 1vw;
+       column-gap: 1vw;
+  overflow: visible;
+  margin: 0;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
+.admonition-col4 .admonition-content {
+  margin: 0;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
+.admonition-col4 .admonition-content ol,
+.admonition-col4 .admonition-content ul {
+  margin-top: -0.25em;
+}
+
+.admonition-kanban .admonition-col4 .admonition-content ul {
+  margin: 0;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
+.admonition-kanban .admonition-col4 .admonition-content ol {
+  margin: 0;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
+.admonition-col4 > .admonition-content {
+  overflow: visible;
+}
+
+.admonition-col4 > .admonition-content-holder {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.admonition-col4 p {
+  text-align: justify;
+  margin-top: 0;
+  padding: 2px;
+}
+
+.admonition-col4 p > img {
+  display: block;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.admonition-col4 p > img:hover {
+  transform: scale(1.2);
+}
+
+.admonition-col4-parent .admonition-col4 .admonition > .admonition-title.no-title + .admonition-content-holder {
+  margin-top: 0;
+}
+
+/*自适应分栏*/
+.admonition-flex {
+  margin: auto;
+  box-shadow: none;
+  border-left: none;
+  word-break: break-word;
+}
+
+body.admonition-bg-color-same.style-options-for-admonition-plugin .admonition-flex {
+  margin: 1em 0;
+}
+
+.is-live-preview .callout-content.admonition-content > p {
+  margin-top: 0;
+}
+
+.admonition-flex > .admonition-content-holder {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.admonition-flex .admonition-content {
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+}
+
+.admonition-flex .admonition-content > div {
+  flex: 1;
+  margin: 0 0.625rem;
+}
+
+.admonition-flex .admonition-content[data-embed-type=image] p {
+  align-self: baseline;
+}
+
+.admonition-flex .admonition-content[data-embed-type=image] {
+  justify-content: space-around;
+}
+
+/*ad-table*/
+.admonition-table {
+  overflow: visible;
+  margin: auto;
+  box-shadow: none;
+}
+
+.admonition-table .admonition-content {
+  width: calc(100% - 5px);
+  margin: 0;
+  overflow-x: auto !important;
+  white-space: nowrap;
+}
+
+.admonition-table .admonition-content thead > tr > th,
+.admonition-table .admonition-content tbody > tr > td {
+  white-space: nowrap;
+}
+
+/*blank ad框全透明隐藏*/
+.admonition-blank {
+  overflow: visible;
+  background-color: rgba(255, 255, 255, 0) !important;
+  border-left: none !important;
+  margin: auto;
+  box-shadow: none;
+}
+
+.admonition-blank .admonition-content {
+  overflow: visible;
+  margin: 0;
+}
+
+.callout.admonition-blank .admonition-content {
+  overflow: hidden;
+}
+
+/* ad伪看板效果*/
+.admonition-kanban {
+  overflow: visible;
+  background-color: rgba(255, 255, 255, 0) !important;
+  border-left: none !important;
+  margin: auto;
+  box-shadow: none !important;
+}
+
+.admonition-kanban .admonition-content {
+  overflow: visible;
+  margin: 0;
+}
+
+.admonition-kanban .is-mobile ul {
+  display: flex;
+}
+
+.admonition-kanban ul {
+  display: flex;
+  margin: 0;
+  flex-direction: row;
+  border: none;
+  padding: 0;
+  border-radius: var(--radius-m);
+  flex-wrap: wrap;
+}
+
+.admonition-kanban ul > li:not(.task-list-item) {
+  flex: 1 1 20%;
+  padding: 0.1em 1em 0.1em 0.8em !important;
+  margin: 0 0.1em 0.3em 0 !important;
+  list-style: none;
+  border: 1px solid var(--p-kanban-border-color);
+  border-left: 1px solid var(--p-kanban-border-color) !important;
+  border-radius: var(--radius-s);
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.admonition-kanban ul .list-collapse-indicator.collapse-indicator.collapse-icon {
+  margin-left: -1.2em;
+  position: absolute;
+}
+
+.admonition-kanban ul .list-collapse-indicator.collapse-indicator.collapse-icon::before {
+  color: var(--text-accent);
+  transition: transform 10ms linear 0s;
+}
+
+.colorful-p-kanban .admonition-kanban ul > li:nth-of-type(8n + 1) {
+  background-color: var(--p-kanban-color-1);
+  padding-left: 1em;
+}
+
+.colorful-p-kanban .admonition-kanban ul > li:nth-of-type(8n + 2) {
+  background-color: var(--p-kanban-color-2);
+  padding-left: 1em;
+}
+
+.colorful-p-kanban .admonition-kanban ul > li:nth-of-type(8n + 3) {
+  background-color: var(--p-kanban-color-3);
+  padding-left: 1em;
+}
+
+.colorful-p-kanban .admonition-kanban ul > li:nth-of-type(8n + 4) {
+  background-color: var(--p-kanban-color-4);
+  padding-left: 1em;
+}
+
+.colorful-p-kanban .admonition-kanban ul > li:nth-of-type(8n + 5) {
+  background-color: var(--p-kanban-color-5);
+  padding-left: 1em;
+}
+
+.colorful-p-kanban .admonition-kanban ul > li:nth-of-type(8n + 6) {
+  background-color: var(--p-kanban-color-6);
+  padding-left: 1em;
+}
+
+.colorful-p-kanban .admonition-kanban ul > li:nth-of-type(8n + 7) {
+  background-color: var(--p-kanban-color-7);
+  padding-left: 1em;
+}
+
+.colorful-p-kanban .admonition-kanban ul > li:nth-of-type(8n) {
+  background-color: var(--p-kanban-color-8);
+  padding-left: 1em;
+}
+
+.admonition-kanban ul ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  margin-top: 0.5rem;
+  border-radius: 0;
+  border: 0;
+  background: none;
+}
+
+.admonition-kanban ul ul li:not(.task-list-item) {
+  width: 100%;
+  display: block;
+  background-color: var(--p-kanban-card-color-1) !important;
+}
+
+.admonition-kanban ul > li:hover {
+  border-color: var(--p-kanban-border-color) !important;
+}
+
+.admonition-kanban ul ul li:hover {
+  background: transparent !important;
+  border-color: var(--p-kanban-border-color) !important;
+  border-left: 1px solid var(--p-kanban-border-color) !important;
+}
+
+.theme-dark .admonition-kanban ul ul li:hover {
+  border-color: rgba(105, 105, 105, 0.8823529412) !important;
+  border-left: 1px solid rgba(105, 105, 105, 0.8823529412) !important;
+}
+
+.admonition-kanban ul ul li .task-list-item-checkbox {
+  margin-left: 1.5rem;
+}
+
+.admonition-kanban ul ul ul {
+  margin-right: 0;
+}
+
+.admonition-kanban ul ul::before {
+  border-left: 0;
+}
+
+:is(.markdown-preview-view, .markdown-rendered).is-readable-line-width .admonition-kanban .markdown-preview-sizer > div > ul {
+  max-width: 100%;
+}
+
+.admonition-kanban ul.contains-task-list ul,
+.admonition-kanban ol.contains-task-list ul,
+.admonition-kanban ul.contains-task-list ol,
+.admonition-kanban ol.contains-task-list ol {
+  position: initial;
+}
+
+.admonition-kanban ul.contains-task-list ul::before,
+.admonition-kanban ol.contains-task-list ul::before,
+.admonition-kanban ul.contains-task-list ol::before,
+.admonition-kanban ol.contains-task-list ol::before {
+  all: initial;
+}
+
+.admonition-kanban ul > li.task-list-item {
+  flex: 1 1 20%;
+  padding: 0.1em 1em;
+  margin: 0 0.1em 0.3em 0;
+  list-style: none;
+  border: 1px solid var(--p-kanban-border-color);
+  border-left: 1px solid var(--p-kanban-border-color) !important;
+  border-radius: var(--radius-s);
+  word-wrap: break-word;
+  word-break: break-word;
+  text-indent: 0;
+}
+
+.admonition-kanban ul ul li.task-list-item {
+  width: 100%;
+  display: block;
+  padding-left: 2em;
+  text-indent: -3.1em;
+  background-color: var(--p-kanban-card-color-1) !important;
+}
+
+/*小屏幕特别优化*/
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .admonition-flex .admonition-content {
+    gap: 24px;
+  }
+  .admonition-kanban ul > li.task-list-item {
+    flex: 1 1 40%;
+  }
+  .admonition-kanban ul > li:not(.task-list-item) {
+    flex: 1 1 40%;
+  }
+}
+@media screen and (max-width: 479px) {
+  .admonition-flex .admonition-content {
+    gap: 15px;
+  }
+  .admonition-flex .admonition-content div {
+    flex: 1 1 60%;
+    margin: 0;
+  }
+  .admonition-kanban ul > li.task-list-item {
+    flex: 1 1 60%;
+  }
+  .admonition-kanban ul > li:not(.task-list-item) {
+    flex: 1 1 40%;
+  }
+}
+/********彩虹大纲线片段********/
+/* RAINBOW INDENT COLORS from https://gist.github.com/GitMurf/5122c0c8405ffa36a03049d9f4434bf4 */
+:root {
+  --list-padding: 24px;
+  --accent-1-rgb: 56, 85, 139;
+  --accent-2-rgb: 95, 56, 139;
+  --accent-3-rgb: 139, 56, 132;
+  --accent-4-rgb: 56, 139, 56;
+  --accent-5-rgb: 224, 142, 19;
+  --accent-6-rgb: 211, 103, 103;
+  --accent-7-rgb: 0, 171, 132;
+  --accent-8-rgb: 0, 163, 224;
+}
+
+body :is(ol, ul) :is(ol, ul) {
+  position: relative;
+}
+
+body :is(ol, ul) :is(ol, ul)::before {
+  content: "";
+  border-right: 1.5px solid var(--background-modifier-border);
+  position: absolute;
+  left: -1.1em;
+  height: 100%;
+}
+
+body .kanban :is(ol, ul) ul::before {
+  display: none;
+}
+
+body ul > li:not(.task-list-item) {
+  border-left: none !important;
+}
+
+body ol > li {
+  border-left: none !important;
+}
+
+body ol,
+body ol ol,
+body ol ol ol,
+body ol ul ol,
+body ol ol ol ol,
+body ol ol ul ol,
+body ol ul ol ol {
+  list-style: decimal;
+}
+
+body ol > li::marker {
+  font-weight: normal;
+  color: var(--text-normal);
+}
+
+body .HyperMD-list-line-1 .cm-formatting-list {
+  color: rgb(var(--accent-1-rgb)) !important;
+}
+
+body .HyperMD-list-line-1 .cm-formatting-task {
+  color: rgb(var(--accent-1-rgb)) !important;
+}
+
+body .mod-cm6 .HyperMD-list-line-1 .task-list-item-checkbox[data-task=x]:checked {
+  background-color: rgba(var(--accent-1-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-1 .task-list-item-checkbox {
+  border-color: rgba(var(--accent-1-rgb), 0.7);
+}
+
+body .cm-hmd-list-indent > span.cm-tab:nth-child(8n+1)::before {
+  border-color: rgba(var(--accent-1-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-1 > span.list-bullet {
+  color: rgb(var(--accent-1-rgb));
+}
+
+body .HyperMD-list-line-2 .cm-formatting-list {
+  color: rgb(var(--accent-2-rgb)) !important;
+}
+
+body .HyperMD-list-line-2 .cm-formatting-task {
+  color: rgb(var(--accent-2-rgb)) !important;
+}
+
+body .mod-cm6 .HyperMD-list-line-2 .task-list-item-checkbox[data-task=x]:checked {
+  background-color: rgba(var(--accent-2-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-2 .task-list-item-checkbox {
+  border-color: rgba(var(--accent-2-rgb), 0.7);
+}
+
+body .cm-hmd-list-indent > span.cm-tab:nth-child(8n+2)::before {
+  border-color: rgba(var(--accent-2-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-2 > span.list-bullet {
+  color: rgb(var(--accent-2-rgb));
+}
+
+body .HyperMD-list-line-3 .cm-formatting-list {
+  color: rgb(var(--accent-3-rgb)) !important;
+}
+
+body .HyperMD-list-line-3 .cm-formatting-task {
+  color: rgb(var(--accent-3-rgb)) !important;
+}
+
+body .mod-cm6 .HyperMD-list-line-3 .task-list-item-checkbox[data-task=x]:checked {
+  background-color: rgba(var(--accent-3-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-3 .task-list-item-checkbox {
+  border-color: rgba(var(--accent-3-rgb), 0.7);
+}
+
+body .cm-hmd-list-indent > span.cm-tab:nth-child(8n+3)::before {
+  border-color: rgba(var(--accent-3-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-3 > span.list-bullet {
+  color: rgb(var(--accent-3-rgb));
+}
+
+body .HyperMD-list-line-4 .cm-formatting-list {
+  color: rgb(var(--accent-4-rgb)) !important;
+}
+
+body .HyperMD-list-line-4 .cm-formatting-task {
+  color: rgb(var(--accent-4-rgb)) !important;
+}
+
+body .mod-cm6 .HyperMD-list-line-4 .task-list-item-checkbox[data-task=x]:checked {
+  background-color: rgba(var(--accent-4-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-4 .task-list-item-checkbox {
+  border-color: rgba(var(--accent-4-rgb), 0.7);
+}
+
+body .cm-hmd-list-indent > span.cm-tab:nth-child(8n+4)::before {
+  border-color: rgba(var(--accent-4-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-4 > span.list-bullet {
+  color: rgb(var(--accent-4-rgb));
+}
+
+body .HyperMD-list-line-5 .cm-formatting-list {
+  color: rgb(var(--accent-5-rgb)) !important;
+}
+
+body .HyperMD-list-line-5 .cm-formatting-task {
+  color: rgb(var(--accent-5-rgb)) !important;
+}
+
+body .mod-cm6 .HyperMD-list-line-5 .task-list-item-checkbox[data-task=x]:checked {
+  background-color: rgba(var(--accent-5-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-5 .task-list-item-checkbox {
+  border-color: rgba(var(--accent-5-rgb), 0.7);
+}
+
+body .cm-hmd-list-indent > span.cm-tab:nth-child(8n+5)::before {
+  border-color: rgba(var(--accent-5-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-5 > span.list-bullet {
+  color: rgb(var(--accent-5-rgb));
+}
+
+body .HyperMD-list-line-6 .cm-formatting-list {
+  color: rgb(var(--accent-6-rgb)) !important;
+}
+
+body .HyperMD-list-line-6 .cm-formatting-task {
+  color: rgb(var(--accent-6-rgb)) !important;
+}
+
+body .mod-cm6 .HyperMD-list-line-6 .task-list-item-checkbox[data-task=x]:checked {
+  background-color: rgba(var(--accent-6-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-6 .task-list-item-checkbox {
+  border-color: rgba(var(--accent-6-rgb), 0.7);
+}
+
+body .cm-hmd-list-indent > span.cm-tab:nth-child(8n+6)::before {
+  border-color: rgba(var(--accent-6-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-6 > span.list-bullet {
+  color: rgb(var(--accent-6-rgb));
+}
+
+body .HyperMD-list-line-7 .cm-formatting-list {
+  color: rgb(var(--accent-7-rgb)) !important;
+}
+
+body .HyperMD-list-line-7 .cm-formatting-task {
+  color: rgb(var(--accent-7-rgb)) !important;
+}
+
+body .mod-cm6 .HyperMD-list-line-7 .task-list-item-checkbox[data-task=x]:checked {
+  background-color: rgba(var(--accent-7-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-7 .task-list-item-checkbox {
+  border-color: rgba(var(--accent-7-rgb), 0.7);
+}
+
+body .cm-hmd-list-indent > span.cm-tab:nth-child(8n+7)::before {
+  border-color: rgba(var(--accent-7-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-7 > span.list-bullet {
+  color: rgb(var(--accent-7-rgb));
+}
+
+body .HyperMD-list-line-8 .cm-formatting-list {
+  color: rgb(var(--accent-8-rgb)) !important;
+}
+
+body .HyperMD-list-line-8 .cm-formatting-task {
+  color: rgb(var(--accent-8-rgb)) !important;
+}
+
+body .mod-cm6 .HyperMD-list-line-8 .task-list-item-checkbox[data-task=x]:checked {
+  background-color: rgba(var(--accent-8-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-8 .task-list-item-checkbox {
+  border-color: rgba(var(--accent-8-rgb), 0.7);
+}
+
+body .cm-hmd-list-indent > span.cm-tab:nth-child(8n)::before {
+  border-color: rgba(var(--accent-8-rgb), 0.7);
+}
+
+body .mod-cm6 .HyperMD-list-line-7 > span.list-bullet {
+  color: rgb(var(--accent-8-rgb));
+}
+
+body .CodeMirror-foldgutter-open.CodeMirror-guttermarker-subtle::after {
+  color: rgb(var(--accent-1-rgb));
+}
+
+/*预览模式
+  /*无序列表 任务框*/
+body ul li .task-list-item-checkbox {
+  border-color: rgba(var(--accent-1-rgb), 0.7);
+}
+
+body ul ul li .task-list-item-checkbox {
+  border-color: rgba(var(--accent-2-rgb), 0.7);
+}
+
+body ul ul ul li .task-list-item-checkbox {
+  border-color: rgba(var(--accent-3-rgb), 0.7);
+}
+
+body ul ul ul ul li .task-list-item-checkbox {
+  border-color: rgba(var(--accent-4-rgb), 0.7);
+}
+
+body ul ul ul ul ul li .task-list-item-checkbox {
+  border-color: rgba(var(--accent-5-rgb), 0.7);
+}
+
+body ul ul ul ul ul ul li .task-list-item-checkbox {
+  border-color: rgba(var(--accent-6-rgb), 0.7);
+}
+
+body ul ul ul ul ul ul ul li .task-list-item-checkbox {
+  border-color: rgba(var(--accent-7-rgb), 0.7);
+}
+
+body ul ul ul ul ul ul ul ul li .task-list-item-checkbox {
+  border-color: rgba(var(--accent-7-rgb), 0.7);
+}
+
+/*无序列表 大纲线*/
+body ul ul::before {
+  border-color: rgba(var(--accent-1-rgb), 0.7) !important;
+}
+
+body li ul ul::before {
+  border-color: rgba(var(--accent-2-rgb), 0.7) !important;
+}
+
+body li ul ul ul::before {
+  border-color: rgba(var(--accent-3-rgb), 0.7) !important;
+}
+
+body li ul ul ul ul::before {
+  border-color: rgba(var(--accent-4-rgb), 0.7) !important;
+}
+
+body li ul ul ul ul ul::before {
+  border-color: rgba(var(--accent-5-rgb), 0.7) !important;
+}
+
+body li ul ul ul ul ul ul::before {
+  border-color: rgba(var(--accent-6-rgb), 0.7) !important;
+}
+
+body li ul ul ul ul ul ul ul::before {
+  border-color: rgba(var(--accent-7-rgb), 0.7) !important;
+}
+
+body li ul ul ul ul ul ul ul ul::before {
+  border-color: rgba(var(--accent-8-rgb), 0.7) !important;
+}
+
+body li ul ul ul ul ul ul ul ul ul::before {
+  border-color: rgba(var(--accent-1-rgb), 0.7) !important;
+}
+
+/*任务有序列表 大纲线*/
+body ol ol::before {
+  border-color: rgba(var(--accent-1-rgb), 0.7) !important;
+}
+
+body li ol ol::before {
+  border-color: rgba(var(--accent-2-rgb), 0.7) !important;
+}
+
+body li ol ol ol::before {
+  border-color: rgba(var(--accent-3-rgb), 0.7) !important;
+}
+
+body li ol ol ol ol::before {
+  border-color: rgba(var(--accent-4-rgb), 0.7) !important;
+}
+
+body li ol ol ol ol ol::before {
+  border-color: rgba(var(--accent-5-rgb), 0.7) !important;
+}
+
+body li ol ol ol ol ol ol::before {
+  border-color: rgba(var(--accent-6-rgb), 0.7) !important;
+}
+
+body li ol ol ol ol ol ol ol::before {
+  border-color: rgba(var(--accent-7-rgb), 0.7) !important;
+}
+
+body li ol ol ol ol ol ol ol ol::before {
+  border-color: rgba(var(--accent-8-rgb), 0.7) !important;
+}
+
+body li ol ol ol ol ol ol ol ol::before {
+  border-color: rgba(var(--accent-1-rgb), 0.7) !important;
+}
+
+/*任务有序列表 选择框*/
+body :is(.markdown-preview-view, .markdown-rendered) li[data-task=x] .task-list-item-checkbox:checked {
+  background-color: rgb(var(--accent-1-rgb), 0.7);
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li[data-task=x] .task-list-item-checkbox:checked {
+  background-color: rgb(var(--accent-2-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li[data-task=x] .task-list-item-checkbox:checked {
+  background-color: rgb(var(--accent-3-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li[data-task=x] .task-list-item-checkbox:checked {
+  background-color: rgb(var(--accent-4-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li[data-task=x] .task-list-item-checkbox:checked {
+  background-color: rgb(var(--accent-5-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li li[data-task=x] .task-list-item-checkbox:checked {
+  background-color: rgb(var(--accent-6-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li li li[data-task=x] .task-list-item-checkbox:checked {
+  background-color: rgb(var(--accent-7-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li li li li[data-task=x] .task-list-item-checkbox:checked {
+  background-color: rgb(var(--accent-8-rgb), 0.7) !important;
+}
+
+/*任务有序列表 选择框未选择*/
+body :is(.markdown-preview-view, .markdown-rendered) li .task-list-item-checkbox {
+  border-color: rgba(var(--accent-1-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li .task-list-item-checkbox {
+  border-color: rgba(var(--accent-2-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li .task-list-item-checkbox {
+  border-color: rgba(var(--accent-3-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li .task-list-item-checkbox {
+  border-color: rgba(var(--accent-4-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li .task-list-item-checkbox {
+  border-color: rgba(var(--accent-5-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li li .task-list-item-checkbox {
+  border-color: rgba(var(--accent-6-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li li li .task-list-item-checkbox {
+  border-color: rgba(var(--accent-7-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li li li li .task-list-item-checkbox {
+  border-color: rgba(var(--accent-8-rgb), 0.7) !important;
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li .list-collapse-indicator.collapse-indicator.collapse-icon::before {
+  color: rgb(var(--accent-1-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li .list-collapse-indicator.collapse-indicator.collapse-icon::before {
+  color: rgb(var(--accent-2-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li .list-collapse-indicator.collapse-indicator.collapse-icon::before {
+  color: rgb(var(--accent-3-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li .list-collapse-indicator.collapse-indicator.collapse-icon::before {
+  color: rgb(var(--accent-4-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li .list-collapse-indicator.collapse-indicator.collapse-icon::before {
+  color: rgb(var(--accent-5-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li li .list-collapse-indicator.collapse-indicator.collapse-icon::before {
+  color: rgb(var(--accent-6-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li li li .list-collapse-indicator.collapse-indicator.collapse-icon::before {
+  color: rgb(var(--accent-7-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) li li li li li li li li .list-collapse-indicator.collapse-indicator.collapse-icon::before {
+  color: rgb(var(--accent-8-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) ul > li::marker,
+body :is(.markdown-preview-view, .markdown-rendered) ol > li::marker {
+  color: rgb(var(--accent-1-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) ul > li ul > li::marker,
+body :is(.markdown-preview-view, .markdown-rendered) ol > li ol > li::marker {
+  color: rgb(var(--accent-2-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) ul > li ul > li ul > li::marker,
+body :is(.markdown-preview-view, .markdown-rendered) ol > li ol > li ol > li::marker {
+  color: rgb(var(--accent-3-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) ul > li ul > li ul > li ul > li::marker,
+body :is(.markdown-preview-view, .markdown-rendered) ol > li ol > li ol > li ol > li::marker {
+  color: rgb(var(--accent-4-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) ul > li ul > li ul > li ul > li ul > li::marker,
+body :is(.markdown-preview-view, .markdown-rendered) ol > li ol > li ol > li ol > li ol > li::marker {
+  color: rgb(var(--accent-5-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) ul > li ul > li ul > li ul > li ul > li ul > li::marker,
+body :is(.markdown-preview-view, .markdown-rendered) ol > li ol > li ol > li ol > li ol > li ol > li::marker {
+  color: rgb(var(--accent-6-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) ul > li ul > li ul > li ul > li ul > li ul > li ul > li::marker,
+body :is(.markdown-preview-view, .markdown-rendered) ol > li ol > li ol > li ol > li ol > li ol > li ol > li::marker {
+  color: rgb(var(--accent-7-rgb));
+}
+
+body :is(.markdown-preview-view, .markdown-rendered) ul > li ul > li ul > li ul > li ul > li ul > li ul > li ul > li::marker,
+body :is(.markdown-preview-view, .markdown-rendered) ol > li ol > li ol > li ol > li ol > li ol > li ol > li ol > li::marker {
+  color: rgb(var(--accent-8-rgb));
+}
+
+/*========floating-toc===========*/
+div.markdown-source-view ul.floating-toc > li {
+  flex: none;
+  background-color: transparent;
+  border: 0px;
+}
+
+div.markdown-source-view ul.floating-toc {
+  flex-wrap: unset;
+}
+
+/* ============ */
+/*image position*/
+/* ============ */
+img[alt$=left]:not([class*=emoji]),
+img[alt$=Left]:not([class*=emoji]),
+img[alt$=LEFT]:not([class*=emoji]),
+img[alt$=L]:not([class*=emoji]),
+.markdown-source-view.mod-cm6 img[alt$=left]:not([class*=emoji]),
+.markdown-source-view.mod-cm6 img[alt$=Left]:not([class*=emoji]),
+.markdown-source-view.mod-cm6 img[alt$=LEFT]:not([class*=emoji]),
+.markdown-source-view.mod-cm6 img[alt$=L]:not([class*=emoji]),
+.internal-embed.image-embed.is-loaded[alt$=left] img[alt$=left]:not([class*=emoji]),
+.internal-embed.image-embed.is-loaded[alt$=Left] img[alt$=Left]:not([class*=emoji]),
+.internal-embed.image-embed.is-loaded[alt$=LEFT] img[alt$=LEFT]:not([class*=emoji]),
+.internal-embed.image-embed.is-loaded[alt$=L] img[alt$=L]:not([class*=emoji]),
+body:not(.image-zoom) .view-content img[alt$=left]:not([class*=emoji]),
+body:not(.image-zoom) .view-content img[alt$=Left]:not([class*=emoji]),
+body:not(.image-zoom) .view-content img[alt$=LEFT]:not([class*=emoji]),
+body:not(.image-zoom) .view-content img[alt$=L]:not([class*=emoji]) {
+  margin: auto !important;
+  margin-left: 0 !important;
+  display: block;
+}
+
+img[alt$=right]:not([class*=emoji]),
+img[alt$=Right]:not([class*=emoji]),
+img[alt$=RIGHT]:not([class*=emoji]),
+img[alt$=R]:not([class*=emoji]),
+.markdown-source-view.mod-cm6 img[alt$=right]:not([class*=emoji]),
+.markdown-source-view.mod-cm6 img[alt$=Right]:not([class*=emoji]),
+.markdown-source-view.mod-cm6 img[alt$=RIGHT]:not([class*=emoji]),
+.markdown-source-view.mod-cm6 img[alt$=R]:not([class*=emoji]),
+.internal-embed.image-embed.is-loaded[alt$=right] img[alt$=right]:not([class*=emoji]),
+.internal-embed.image-embed.is-loaded[alt$=Right] img[alt$=Right]:not([class*=emoji]),
+.internal-embed.image-embed.is-loaded[alt$=RIGHT] img[alt$=RIGHT]:not([class*=emoji]),
+.internal-embed.image-embed.is-loaded[alt$=R] img[alt$=R]:not([class*=emoji]),
+body:not(.image-zoom) .view-content img[alt$=right]:not([class*=emoji]),
+body:not(.image-zoom) .view-content img[alt$=Right]:not([class*=emoji]),
+body:not(.image-zoom) .view-content img[alt$=RIGHT]:not([class*=emoji]),
+body:not(.image-zoom) .view-content img[alt$=R]:not([class*=emoji]) {
+  margin: auto !important;
+  margin-right: 0 !important;
+  display: block;
+}
+
+img[alt$=centre]:not([class*=emoji]),
+img[alt$=center]:not([class*=emoji]),
+img[alt$=CENTRE]:not([class*=emoji]),
+img[alt$=CENTER]:not([class*=emoji]),
+img[alt$=Center]:not([class*=emoji]),
+img[alt$=Centre]:not([class*=emoji]),
+img[alt$=C]:not([class*=emoji]),
+.markdown-source-view.mod-cm6 img[alt$=centre]:not([class*=emoji]),
+.markdown-source-view.mod-cm6 img[alt$=center]:not([class*=emoji]),
+.markdown-source-view.mod-cm6 img[alt$=Centre]:not([class*=emoji]),
+.markdown-source-view.mod-cm6 img[alt$=Center]:not([class*=emoji]),
+.markdown-source-view.mod-cm6 img[alt$=CENTRE]:not([class*=emoji]),
+.markdown-source-view.mod-cm6 img[alt$=CENTER]:not([class*=emoji]),
+.markdown-source-view.mod-cm6 img[alt$=C]:not([class*=emoji]),
+.internal-embed.image-embed.is-loaded[alt$=centre] img[alt$=right]:not([class*=emoji]),
+.internal-embed.image-embed.is-loaded[alt$=center] img[alt$=Right]:not([class*=emoji]),
+.internal-embed.image-embed.is-loaded[alt$=Centre] img[alt$=RIGHT]:not([class*=emoji]),
+.internal-embed.image-embed.is-loaded[alt$=Center] img[alt$=R]:not([class*=emoji]),
+.internal-embed.image-embed.is-loaded[alt$=CENTRE] img[alt$=Right]:not([class*=emoji]),
+.internal-embed.image-embed.is-loaded[alt$=CENTER] img[alt$=RIGHT]:not([class*=emoji]),
+.internal-embed.image-embed.is-loaded[alt$=C] img[alt$=R]:not([class*=emoji]),
+body:not(.image-zoom) .view-content img[alt$=centre]:not([class*=emoji]),
+body:not(.image-zoom) .view-content img[alt$=center]:not([class*=emoji]),
+body:not(.image-zoom) .view-content img[alt$=Centre]:not([class*=emoji]),
+body:not(.image-zoom) .view-content img[alt$=Center]:not([class*=emoji]),
+body:not(.image-zoom) .view-content img[alt$=CENTRE]:not([class*=emoji]),
+body:not(.image-zoom) .view-content img[alt$=CENTER]:not([class*=emoji]),
+body:not(.image-zoom) .view-content img[alt$=C]:not([class*=emoji]) {
+  margin: auto !important;
+  display: block;
+}
+
+img[alt$=inline]:not([class*=emoji]),
+img[alt$=Inline]:not([class*=emoji]),
+img[alt$=INLINE]:not([class*=emoji]),
+img[alt$=inl]:not([class*=emoji]),
+img[alt$=INL]:not([class*=emoji]),
+img[alt$=Inl]:not([class*=emoji]) {
+  display: inline !important;
+  padding: 0.05em 0.05em !important;
+  vertical-align: bottom;
+}
+
+img[alt$=inlineL]:not([class*=emoji]),
+img[alt$=InlineL]:not([class*=emoji]),
+img[alt$=INLINEL]:not([class*=emoji]),
+img[alt$=inlL]:not([class*=emoji]),
+img[alt$=INLL]:not([class*=emoji]),
+img[alt$=InlL]:not([class*=emoji]) {
+  float: left;
+  padding: 0 0.05em 0.05em 0 !important;
+}
+
+img[alt$=inlineR]:not([class*=emoji]),
+img[alt$=InlineR]:not([class*=emoji]),
+img[alt$=INLINER]:not([class*=emoji]),
+img[alt$=inlR]:not([class*=emoji]),
+img[alt$=INLR]:not([class*=emoji]),
+img[alt$=InlR]:not([class*=emoji]) {
+  float: right;
+  padding: 0 0 0.05em 0.05em !important;
+}
+
+img.excalidraw-svg-right,
+img.excalidraw-svg-Right,
+img.excalidraw-svg-RIGHT,
+img.excalidraw-svg-R {
+  float: right !important;
+}
+
+img.excalidraw-svg-left,
+img.excalidraw-svg-Left,
+img.excalidraw-svg-LEFT,
+img.excalidraw-svg-L {
+  float: left !important;
+}
+
+img.excalidraw-svg-right,
+img.excalidraw-svg-Right,
+img.excalidraw-svg-RIGHT,
+img.excalidraw-svg-R,
+img.excalidraw-svg-left,
+img.excalidraw-svg-Left,
+img.excalidraw-svg-LEFT,
+img.excalidraw-svg-L {
+  display: table;
+  width: 100%;
+}
+
+/* img captions */
+/* modified from Discordian theme by @radekkozak */
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=center],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=centre],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=Centre],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=Center],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=CENTRE],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=CENTER],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=C] {
+  clear: both;
+  margin: 0 auto !important;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+}
+
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=center]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=centre]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=Centre]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=Center]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=CENTRE]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=CENTER]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=C]::after {
+  content: attr(alt);
+  margin: 0.5rem 0;
+  display: block;
+  caption-side: bottom;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=left],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=LEFT],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=Left],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=L] {
+  position: relative;
+  float: left;
+  margin: 0.5rem 1rem 0.5rem 0 !important;
+  clear: both;
+  display: table;
+}
+
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=left]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=LEFT]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=Left]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=L]::after {
+  content: attr(alt);
+  padding: 0 0.5rem;
+  margin: 0.5rem 0 1rem;
+  display: table-caption;
+  caption-side: bottom;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=right],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=RIGHT],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=Right],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=R] {
+  position: relative;
+  float: right;
+  margin: 0.5rem 0 0.5rem 1rem !important;
+  clear: both;
+  display: table;
+}
+
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=right]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=RIGHT]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=Right]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=R]::after {
+  content: attr(alt);
+  padding: 0 0.5rem;
+  margin: 0.5rem 0 1rem;
+  display: table-caption;
+  caption-side: bottom;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=inline],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=Inline],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=INLINE],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=inl],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=INL],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=Inl] {
+  clear: both;
+  margin: 0 auto !important;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-table;
+}
+
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=inline]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=Inline]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=INLINE]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=inl]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=INL]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$=Inl]::after {
+  content: attr(alt);
+  padding: 0 0.7em;
+  margin: 0.5rem 0;
+  display: block;
+  caption-side: bottom;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+/* image-grid-1 */
+/* adapted from https://github.com/Lithou/Sandbox/blob/main/.obsidian/snippets/pub-Image%20Flags.css */
+body span[alt*="+grid"] {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+.markdown-source-view.is-live-preview .internal-embed.image-embed.is-loaded[alt*="+grid"] {
+  display: inline-table;
+  vertical-align: middle;
+  max-width: 25%;
+}
+
+/* image-background */
+.markdown-preview-view img[alt^=background] {
+  width: 100%;
+  margin: 0px auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+          mask-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: -1;
+  background-size: cover;
+}
+
+.is-live-preview img[alt^=background] {
+  width: 100%;
+  margin: 0px auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+          mask-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  opacity: 0.35;
+  z-index: -1;
+}
+
+@media print {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    page-break-after: avoid;
+    color: #303133 !important;
+  }
+  h1 {
+    text-align: center;
+  }
+  code:not([class*=language]) {
+    background-color: #f5f7fa;
+  }
+  .external-link::before {
+    display: none;
+  }
+}
+.workspace-leaf-content[data-type=recent-files] .tree-item-self {
+  padding-left: 2px;
+}/*# sourceMappingURL=【自定义】general.css.map */

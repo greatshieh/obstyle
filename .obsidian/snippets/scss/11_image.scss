@@ -1,0 +1,278 @@
+
+/* ============ */
+/*image position*/
+/* ============ */
+img[alt$="left"]:not([class*="emoji"]),
+img[alt$="Left"]:not([class*="emoji"]),
+img[alt$="LEFT"]:not([class*="emoji"]),
+img[alt$="L"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="left"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="Left"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="LEFT"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="L"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="left"] img[alt$="left"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="Left"] img[alt$="Left"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="LEFT"] img[alt$="LEFT"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="L"] img[alt$="L"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="left"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="Left"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="LEFT"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="L"]:not([class*="emoji"]) {
+    margin: auto !important;
+    margin-left: 0 !important;
+    display: block;
+}
+
+img[alt$="right"]:not([class*="emoji"]),
+img[alt$="Right"]:not([class*="emoji"]),
+img[alt$="RIGHT"]:not([class*="emoji"]),
+img[alt$="R"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="right"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="Right"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="RIGHT"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="R"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="right"] img[alt$="right"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="Right"] img[alt$="Right"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="RIGHT"] img[alt$="RIGHT"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="R"] img[alt$="R"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="right"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="Right"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="RIGHT"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="R"]:not([class*="emoji"]) {
+    margin: auto !important;
+    margin-right: 0 !important;
+    display: block;
+}
+
+img[alt$="centre"]:not([class*="emoji"]),
+img[alt$="center"]:not([class*="emoji"]),
+img[alt$="CENTRE"]:not([class*="emoji"]),
+img[alt$="CENTER"]:not([class*="emoji"]),
+img[alt$="Center"]:not([class*="emoji"]),
+img[alt$="Centre"]:not([class*="emoji"]),
+img[alt$="C"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="centre"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="center"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="Centre"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="Center"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="CENTRE"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="CENTER"]:not([class*="emoji"]),
+.markdown-source-view.mod-cm6 img[alt$="C"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="centre"] img[alt$="right"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="center"] img[alt$="Right"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="Centre"] img[alt$="RIGHT"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="Center"] img[alt$="R"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="CENTRE"] img[alt$="Right"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="CENTER"] img[alt$="RIGHT"]:not([class*="emoji"]),
+.internal-embed.image-embed.is-loaded[alt$="C"] img[alt$="R"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="centre"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="center"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="Centre"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="Center"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="CENTRE"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="CENTER"]:not([class*="emoji"]),
+body:not(.image-zoom) .view-content img[alt$="C"]:not([class*="emoji"]) {
+    margin: auto !important;
+    display: block;
+}
+
+img[alt$="inline"]:not([class*="emoji"]),
+img[alt$="Inline"]:not([class*="emoji"]),
+img[alt$="INLINE"]:not([class*="emoji"]),
+img[alt$="inl"]:not([class*="emoji"]),
+img[alt$="INL"]:not([class*="emoji"]),
+img[alt$="Inl"]:not([class*="emoji"]) {
+    display: inline !important;
+    padding: 0.05em 0.05em !important;
+    vertical-align: bottom;
+}
+
+img[alt$="inlineL"]:not([class*="emoji"]),
+img[alt$="InlineL"]:not([class*="emoji"]),
+img[alt$="INLINEL"]:not([class*="emoji"]),
+img[alt$="inlL"]:not([class*="emoji"]),
+img[alt$="INLL"]:not([class*="emoji"]),
+img[alt$="InlL"]:not([class*="emoji"]) {
+    float: left;
+    padding: 0 0.05em 0.05em 0 !important;
+}
+
+img[alt$="inlineR"]:not([class*="emoji"]),
+img[alt$="InlineR"]:not([class*="emoji"]),
+img[alt$="INLINER"]:not([class*="emoji"]),
+img[alt$="inlR"]:not([class*="emoji"]),
+img[alt$="INLR"]:not([class*="emoji"]),
+img[alt$="InlR"]:not([class*="emoji"]) {
+    float: right;
+    padding: 0 0 0.05em 0.05em !important;
+}
+
+img.excalidraw-svg-right,
+img.excalidraw-svg-Right,
+img.excalidraw-svg-RIGHT,
+img.excalidraw-svg-R {
+    float: right !important;
+}
+
+img.excalidraw-svg-left,
+img.excalidraw-svg-Left,
+img.excalidraw-svg-LEFT,
+img.excalidraw-svg-L {
+    float: left !important;
+}
+
+img.excalidraw-svg-right,
+img.excalidraw-svg-Right,
+img.excalidraw-svg-RIGHT,
+img.excalidraw-svg-R,
+img.excalidraw-svg-left,
+img.excalidraw-svg-Left,
+img.excalidraw-svg-LEFT,
+img.excalidraw-svg-L {
+    display: table;
+    width: 100%
+}
+
+/* img captions */
+/* modified from Discordian theme by @radekkozak */
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="center"],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="centre"],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="Centre"],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="Center"],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="CENTRE"],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="CENTER"],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="C"] {
+    clear: both;
+    margin: 0 auto !important;
+    width: fit-content;
+    display: block;
+}
+
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="center"]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="centre"]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="Centre"]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="Center"]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="CENTRE"]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="CENTER"]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="C"]::after {
+    content: attr(alt);
+    margin: 0.5rem 0;
+    display: block;
+    caption-side: bottom;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="left"],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="LEFT"],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="Left"],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="L"] {
+    position: relative;
+    float: left;
+    margin: 0.5rem 1rem 0.5rem 0 !important;
+    clear: both;
+    display: table;
+}
+
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="left"]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="LEFT"]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="Left"]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="L"]::after {
+    content: attr(alt);
+    padding: 0 0.5rem;
+    margin: 0.5rem 0 1rem;
+    display: table-caption;
+    caption-side: bottom;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="right"],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="RIGHT"],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="Right"],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="R"] {
+    position: relative;
+    float: right;
+    margin: 0.5rem 0 0.5rem 1rem !important;
+    clear: both;
+    display: table;
+}
+
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="right"]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="RIGHT"]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="Right"]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="R"]::after {
+    content: attr(alt);
+    padding: 0 0.5rem;
+    margin: 0.5rem 0 1rem;
+    display: table-caption;
+    caption-side: bottom;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="inline"],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="Inline"],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="INLINE"],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="inl"],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="INL"],
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="Inl"] {
+    clear: both;
+    margin: 0 auto !important;
+    width: fit-content;
+    display: inline-table;
+}
+
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="inline"]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="Inline"]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="INLINE"]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="inl"]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="INL"]::after,
+:is(.markdown-preview-view, .markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) .image-embed[src$="Inl"]::after {
+    content: attr(alt);
+    padding: 0 0.7em;
+    margin: 0.5rem 0;
+    display: block;
+    caption-side: bottom;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+/* image-grid-1 */
+/* adapted from https://github.com/Lithou/Sandbox/blob/main/.obsidian/snippets/pub-Image%20Flags.css */
+body span[alt*="+grid"] {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.markdown-source-view.is-live-preview .internal-embed.image-embed.is-loaded[alt*="+grid"] {
+    display: inline-table;
+    vertical-align: middle;
+    max-width: 25%;
+}
+
+/* image-background */
+.markdown-preview-view img[alt^="background"] {
+    width: 100%;
+    margin: 0px auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    z-index: -1;
+    background-size: cover;
+}
+
+.is-live-preview img[alt^="background"] {
+    width: 100%;
+    margin: 0px auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    opacity: 0.35;
+    z-index: -1;
+}

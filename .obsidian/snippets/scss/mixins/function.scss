@@ -1,0 +1,24 @@
+/* 参考 Element Plus  https://github.com/element-plus/element-plus */
+// 拼接变量名
+// joinVarName(('tag', 'text-color')) => '--tag-text-color'
+@function joinVarName($list) {
+    $name: '-';
+
+    @each $item in $list {
+        @if $item !='' {
+            $name: $name + '-' + $item;
+        }
+    }
+
+    @return $name;
+}
+
+// getCssVarName('button', 'text-color') => '--button-text-color'
+@function getCssVarName($args...) {
+    @return joinVarName($args);
+}
+
+// getCssVar('button', 'text-color') => var(--button-text-color)
+@function getCssVar($args...) {
+    @return var(#{joinVarName($args)});
+}
