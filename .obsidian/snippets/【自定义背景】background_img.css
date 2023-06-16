@@ -70,8 +70,14 @@ body.background-image .app-container .workspace-split {
     --background-secondary: transparent;
 }
 
-body.background-image .workspace-tab-header-container {
-    background-color: transparent;
+body.background-image .mod-top .workspace-tab-header-container {
+    background-image: radial-gradient(transparent 1px, #141414 1px);
+    background-size: 4px 4px;
+    backdrop-filter: saturate(50%) blur(4px);
+}
+
+body.background-image .mod-root .view-header {
+    background-color: rgba(20, 20, 20, .4);
 }
 
 body.background-image .workspace::before {

@@ -119,28 +119,6 @@ async function getbookByurl(url) {
   return bookinfo
 }
 
-async function getBookByisbn(isbn) {
-  let isbnurl = "https://m.douban.com/search/?query=" + isbn
-  let page = await urlGet(isbnurl)
-
-  if (!page) {
-    notice("No results found.")
-    throw new Error("No results found.")
-  }
-  let p = new DOMParser()
-  let doc = p.parseFromString(page, "text/html")
-  let $ = (s) => doc.querySelector(s)
-  let title = $("div.subject-info span")?.textContent
-  let detailUrl = String($("ul li a").href).replace(
-    "app://obsidian.md",
-    "https://m.douban.com"
-  )
-  if (!detailUrl) {
-    return null
-  }
-  return detailUrl
-}
-
 async function urlGet(url) {
   let finalURL = new URL(url)
   const res = await request({
